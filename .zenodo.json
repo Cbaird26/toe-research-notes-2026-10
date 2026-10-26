@@ -21,7 +21,7 @@
     "Theory of Everything"
   ],
   "license": "cc-by-4.0",
-  "version": "1.0",
+  "version": "1.0.1",
   "language": "eng",
   "related_identifiers": [
     {
@@ -43,5 +43,5 @@
       "scheme": "doi"
     }
   ],
-  "notes": "AI-assisted working notes prepared for the author within the ZoraASI research program (the T-1 notes state they were prepared with ChatGPT). Repository assembled by Claude (Anthropic); the notes are unchanged. Not peer reviewed."
+  "notes": "AI-assisted working notes prepared for the author within the ZoraASI research program (the T-1 notes state they were prepared with ChatGPT). Repository assembled by Claude (Anthropic); the notes are unchanged. Not peer reviewed. Version 1.0.1 corrects the README: the four notes also appear as pages in the research supplements of the corpus editions of 20 and 22 October 2026 (sections S0007–S0010)."
 }

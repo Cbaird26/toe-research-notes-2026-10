@@ -3,7 +3,7 @@
 **Scalar-portal measurement bridges, an interferometry data audit and T-1 spectral matching**
 MQGT-SCF / ZoraASI research program · Christopher Michael Baird · notes dated 10–12 October 2026
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23659081.svg)](https://doi.org/10.5281/zenodo.23659081)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23659080.svg)](https://doi.org/10.5281/zenodo.23659080)
 
 > **Status:** working notes (v0.1), not peer reviewed. Each note is an AI-assisted research calculation prepared for the author within the ZoraASI program, and each one states its own scope. They are conditional calculations and data audits. None of them reports a detection, claims new fundamental physics, or completes a Theory of Everything.
 
@@ -47,9 +47,9 @@ Christopher Michael Baird leads the research program. The two notes dated 11 Oct
 
 ## Citation
 
-Baird, C. M. (2026). *Theory of Everything Research Notes, October 2026: Scalar-Portal Measurement Bridges, an Interferometry Data Audit and T-1 Spectral Matching* (version 1.0) [Working paper]. Zenodo. https://doi.org/10.5281/zenodo.23659081
+Baird, C. M. (2026). *Theory of Everything Research Notes, October 2026: Scalar-Portal Measurement Bridges, an Interferometry Data Audit and T-1 Spectral Matching* [Working paper]. Zenodo. https://doi.org/10.5281/zenodo.23659080
 
-To cite all versions, use the concept DOI [10.5281/zenodo.23659080](https://doi.org/10.5281/zenodo.23659080). See also `CITATION.cff`.
+This concept DOI always resolves to the latest version. Version 1.0 is [10.5281/zenodo.23659081](https://doi.org/10.5281/zenodo.23659081); version 1.0.1 corrects this README's statement about the corpus editions. See also `CITATION.cff`.
 
 ## License
 
