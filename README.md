@@ -38,7 +38,7 @@ These are deterministic calculation checks, not experimental significance tests.
 
 ## Relationship to other work
 
-- Part of the MQGT-SCF / Theory of Everything program, whose versioned corpus is on Zenodo under concept DOI [10.5281/zenodo.14019809](https://doi.org/10.5281/zenodo.14019809). These four notes are not included in the corpus edition of 22 October 2026.
+- Part of the MQGT-SCF / Theory of Everything program, whose versioned corpus is on Zenodo under concept DOI [10.5281/zenodo.14019809](https://doi.org/10.5281/zenodo.14019809). The four notes also appear, as pages, in the research supplements of the corpus editions of 20 and 22 October 2026 (sections S0007–S0010). This repository adds their supporting scripts and checks and the two earlier T-1 archives, and gives the notes a citable record of their own.
 - The T-1 notes use the four-copy odd-lattice sphere model as an illustrative comparison branch, not as part of the original toroidal MQGT-SCF action.
 
 ## AI assistance and provenance
