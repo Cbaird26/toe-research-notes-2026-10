@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "Theory of Everything Research Notes, October 2026: Scalar-Portal Measurement Bridges, an Interferometry Data Audit and T-1 Spectral Matching"
 version: "1.0"
+doi: 10.5281/zenodo.23659081
 date-released: 2026-10-26
 authors:
   - family-names: Baird
@@ -10,8 +11,13 @@ authors:
 license: CC-BY-4.0
 repository-code: "https://github.com/Cbaird26/toe-research-notes-2026-10"
 keywords: [MQGT-SCF, Higgs portal, scalar field, matter-wave interferometry, decoherence, spectral action, gauge coupling, ZoraASI]
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23659080
+    description: "Concept DOI for all versions"
 preferred-citation:
   type: report
+  doi: 10.5281/zenodo.23659081
   title: "Theory of Everything Research Notes, October 2026: Scalar-Portal Measurement Bridges, an Interferometry Data Audit and T-1 Spectral Matching"
   authors:
     - family-names: Baird
