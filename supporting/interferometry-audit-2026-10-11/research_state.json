@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-11",
+  "goal": "Proceed with completing the theory of everything",
+  "goal_status": "active; not complete",
+  "previous_stage": "output/research/toe-quadratic-portal-20261011/research_state.json",
+  "this_stage_status": "Public baseline reanalysis and conditional moving/composite spectrum calculations completed; no new-field fit or exclusion",
+  "achieved_this_stage": [
+    "Reanalyzed 95 experimental fringe scans comprising 3895 count observations from Zenodo 17502163, with independent linear least-squares fit checks.",
+    "Recomputed ordinary quantum and classical visibility using the original grating kernel; retained the published contrast factor explicitly; documented why this is not an exact published-figure replication.",
+    "Identified a deposited-code/paper optical cross-section mismatch and quantified its effect without choosing either branch as the complete correct calibration.",
+    "Derived and numerically checked the spacelike dynamic thermal spectrum for the quadratic scalar operator and its unequal-mass ordered conversion extension.",
+    "Derived the moving rigid-composite rate, discrete scalar charge structure factor and conditional Talbot-Lau harmonic attenuation mapping.",
+    "Documented finite-time memory limitations and the contrast/attenuation degeneracy; no scalar or Theory-of-Everything validation inferred."
+  ],
+  "numerical_results": {
+    "scans": 95,
+    "count_observations": 3895,
+    "maximum_restarted_fit_visibility_difference": 1.542086736083803e-10,
+    "optical_formula_max_visibility_change_before_contrast_factor": 0.036402979247824235,
+    "optical_formula_max_visibility_change_after_contrast_factor": 0.028394323813302903,
+    "static_and_dynamic_kernel_checks": "passed as recorded in moving_kernel_checks.json",
+    "note": "These are deterministic calculation checks and input-sensitivity differences, not experimental significance or confidence intervals."
+  },
+  "next_bounded_tasks": [
+    {
+      "priority": 1,
+      "task": "Integrate the conditional channel rate into complex Talbot-Lau harmonics with explicit SI conversion, mass/speed distributions, constituent charges and the declared bath state; verify zero-coupling and stationary limits. Keep this a sensitivity model until calibration and identifiability are established."
+    },
+    {
+      "priority": 2,
+      "task": "Construct a raw-count likelihood with scan phase, flux/background and ordinary contrast nuisance parameters. Preserve both optical branches; characterize parameter degeneracies before assigning portal confidence limits."
+    },
+    {
+      "priority": 3,
+      "task": "Reconcile additional public supplementary photophysics, transmission and velocity calibration information if available. Do not contact authors without user authorization."
+    },
+    {
+      "priority": 4,
+      "task": "Use independent datasets to discriminate a predicted dependence; examine the public atom data duplicate-like final rows before using them as independent observations."
+    }
+  ],
+  "full_goal_open_requirements": [
+    "A common internally consistent quantum and gravitational framework covering the claimed scope.",
+    "Recovery of established particle physics and gravity in controlled limits and empirical constraints on its parameters.",
+    "A physically justified scalar state, occupation or abundance rather than an unmeasured freely chosen bath.",
+    "Apparatus calibration, complete finite-path response and statistically identifiable comparison with real observations.",
+    "Distinctive quantitative predictions, independent experimental validation and substantive expert scrutiny."
+  ],
+  "scope_restrictions": [
+    "No claim that a Theory of Everything has been solved.",
+    "No scalar fit, detection, exclusion, bath temperature, mass or abundance measured.",
+    "No substitution of the deposited collapse-model parameters for Higgs-portal parameters.",
+    "Internal AI cross-checks are not external peer review.",
+    "No user source documents or downloaded author files edited."
+  ],
+  "final_note": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/pdf/Moving_Portal_Interferometry_Audit_2026-10-11.pdf",
+  "source_integrity": "source_integrity.json",
+  "manifest": "manifest.json"
+}

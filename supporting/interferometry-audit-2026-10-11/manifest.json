@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-11",
+  "files": {
+    "output/research/toe-interferometer-reproduction-20261011/baseline_comparison.png": {
+      "sha256": "cbaa38d608c9aa542b65cc2f1f0fbb51f49be948ed1d3e102b3048783e36c91e",
+      "bytes": 122059
+    },
+    "output/research/toe-interferometer-reproduction-20261011/baseline_results.json": {
+      "sha256": "ade9309fe58aea5a76525641b61906fe34cd91523915b89701f5358da110adfe",
+      "bytes": 106229
+    },
+    "output/research/toe-interferometer-reproduction-20261011/build_research_note.py": {
+      "sha256": "b3bb3c6b6986de19f2e3e2c493a6dd37dfc14305bb7ec3c824257d8219dbf240",
+      "bytes": 18843
+    },
+    "output/research/toe-interferometer-reproduction-20261011/check_moving_kernel.py": {
+      "sha256": "41004c96bdbdbab58af76d2cb74721677f43fd6fe8cced22aef2587d971256b2",
+      "bytes": 7380
+    },
+    "output/research/toe-interferometer-reproduction-20261011/check_optical_inputs.py": {
+      "sha256": "e03cb5602bc40227c7530c7828b10d95568604c0e28eb8ed7f779d8f855bcd44",
+      "bytes": 5115
+    },
+    "output/research/toe-interferometer-reproduction-20261011/moving_kernel_checks.json": {
+      "sha256": "034dde0b706346ad9863d95132a0a884f19045060d630bef910d97862e4e750c",
+      "bytes": 3884
+    },
+    "output/research/toe-interferometer-reproduction-20261011/optical_input_checks.json": {
+      "sha256": "a0bc8fefd8aa7216b151139dee14f38bd09d9948685cae29a0124166230e59a6",
+      "bytes": 4891
+    },
+    "output/research/toe-interferometer-reproduction-20261011/optical_input_sensitivity.png": {
+      "sha256": "4b3a7f9e30f35b230b6db7883df562e2f4a2dbad93cd7086f6c703ad88340431",
+      "bytes": 122063
+    },
+    "output/research/toe-interferometer-reproduction-20261011/primary-paper.pdf": {
+      "sha256": "09eb91f0735d13e422625681d7fd84ea952d68902611022d5400318fae1cddbc",
+      "bytes": 6069708
+    },
+    "output/research/toe-interferometer-reproduction-20261011/reproduce_baseline.py": {
+      "sha256": "539f912f30bb010988b353a4a8ca45a1432e521e63e1243cecbb3cd0db14d7c0",
+      "bytes": 11091
+    },
+    "output/research/toe-interferometer-reproduction-20261011/research_state.json": {
+      "sha256": "9baee0f5606d883f66cb106fc4ac4441604933c21618924e490c137ee26fb878",
+      "bytes": 4325
+    },
+    "output/research/toe-interferometer-reproduction-20261011/source_integrity.json": {
+      "sha256": "f8fafcd4df1eaf92e97b5644a399758f9c7552bff58d318304be5cdbbf362864",
+      "bytes": 24350
+    },
+    "output/pdf/Moving_Portal_Interferometry_Audit_2026-10-11.pdf": {
+      "sha256": "c22570eb90788856bad76259f1506dc46d0bce93017e23918e17bfc3c78b61b3",
+      "bytes": 673033
+    },
+    "output/research/toe-public-data-20261011/zenodo-17502163/Na-Cluster-Interference.zip": {
+      "sha256": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
+      "bytes": 88626
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "status": "conditional_calculation_checks_passed",
+  "evidence_class": "analytic_derivation_and_deterministic_numerical_checks",
+  "laboratory_data_used": false,
+  "theory_of_everything_completed": false,
+  "source_sha256": "60aefb52b141b69c99f26bd877867c48bfda56ebd1a96898a7c7185b13646884",
+  "versions": {
+    "numpy": "2.3.5",
+    "mpmath": "1.4.1"
+  },
+  "checks": {
+    "local_closed_form": 0.0,
+    "spatial_fourier": 3.129376033684127e-16,
+    "collision_flux": 3.74905941123929e-14,
+    "small_separation": 2.647709670400289e-07,
+    "resolution_doubling": 1.1102230246251565e-16
+  },
+  "grid_cases": 24,
+  "low_temperature_leading_error": 4.596323321948148e-14,
+  "massless_limit_error": 6.079255820412577e-06,
+  "spatial_covariance_min_eigenvalue": 0.04578274045525469,
+  "mixed_scalar_checks": {
+    "degenerate_reduction_relative_error": 0.0,
+    "degenerate_rotation_relative_error": 2.220446049250313e-16,
+    "unequal_mass_resolution_relative_error": 0.0,
+    "unequal_mass_rate_T1": 0.014381490958106065,
+    "mixed_rate_over_local_counterexample": 1.1779890155054689
+  },
+  "portal_vertex_cross_section_relative_error": 0.0,
+  "cutoff_over_temperature": [
+    5.0,
+    10.0,
+    20.0,
+    50.0,
+    100.0
+  ],
+  "regulated_rate_fraction": [
+    0.453933058490734,
+    0.7756746538433935,
+    0.9323128068863539,
+    0.9884744770382902,
+    0.9970915499123849
+  ],
+  "negative_controls": {
+    "wrong_vertex_rate_ratio": 0.25,
+    "equal_means_but_nonzero_rate_fraction": 0.8161552758397436
+  },
+  "grid": [
+    {
+      "m_over_T": 0.1,
+      "r_times_T": 0.0,
+      "normalized_rate": 0.0,
+      "scaled_local_spectrum": 0.055154911046897084
+    },
+    {
+      "m_over_T": 0.1,
+      "r_times_T": 0.0001,
+      "normalized_rate": 2.7909688315627574e-08,
+      "scaled_local_spectrum": 0.055154911046897084
+    },
+    {
+      "m_over_T": 0.1,
+      "r_times_T": 0.1,
+      "normalized_rate": 0.02689879292490791,
+      "scaled_local_spectrum": 0.055154911046897084
+    },
+    {
+      "m_over_T": 0.1,
+      "r_times_T": 1.0,
+      "normalized_rate": 0.6328481309565988,
+      "scaled_local_spectrum": 0.055154911046897084
+    },
+    {
+      "m_over_T": 0.1,
+      "r_times_T": 3.0,
+      "normalized_rate": 0.8914082886995418,
+      "scaled_local_spectrum": 0.055154911046897084
+    },
+    {
+      "m_over_T": 0.1,
+      "r_times_T": 10.0,
+      "normalized_rate": 0.9834313179102151,
+      "scaled_local_spectrum": 0.055154911046897084
+    },
+    {
+      "m_over_T": 1.0,
+      "r_times_T": 0.0,
+      "normalized_rate": 0.0,
+      "scaled_local_spectrum": 0.07604646274652113
+    },
+    {
+      "m_over_T": 1.0,
+      "r_times_T": 0.0001,
+      "normalized_rate": 4.151503555285488e-08,
+      "scaled_local_spectrum": 0.07604646274652113
+    },
+    {
+      "m_over_T": 1.0,
+      "r_times_T": 0.1,
+      "normalized_rate": 0.039886185122868234,
+      "scaled_local_spectrum": 0.07604646274652113
+    },
+    {
+      "m_over_T": 1.0,
+      "r_times_T": 1.0,
+      "normalized_rate": 0.8161552758397436,
+      "scaled_local_spectrum": 0.07604646274652113
+    },
+    {
+      "m_over_T": 1.0,
+      "r_times_T": 3.0,
+      "normalized_rate": 0.9802809937476191,
+      "scaled_local_spectrum": 0.07604646274652113
+    },
+    {
+      "m_over_T": 1.0,
+      "r_times_T": 10.0,
+      "normalized_rate": 0.9983158946303706,
+      "scaled_local_spectrum": 0.07604646274652113
+    },
+    {
+      "m_over_T": 10.0,
+      "r_times_T": 0.0,
+      "normalized_rate": 0.0,
+      "scaled_local_spectrum": 0.35477456613551234
+    },
+    {
+      "m_over_T": 10.0,
+      "r_times_T": 0.0001,
+      "normalized_rate": 1.612102033344742e-07,
+      "scaled_local_spectrum": 0.35477456613551234
+    },
+    {
+      "m_over_T": 10.0,
+      "r_times_T": 0.1,
+      "normalized_rate": 0.1454225502967156,
+      "scaled_local_spectrum": 0.35477456613551234
+    },
+    {
+      "m_over_T": 10.0,
+      "r_times_T": 1.0,
+      "normalized_rate": 0.9766473022280878,
+      "scaled_local_spectrum": 0.35477456613551234
+    },
+    {
+      "m_over_T": 10.0,
+      "r_times_T": 3.0,
+      "normalized_rate": 0.9974676070492035,
+      "scaled_local_spectrum": 0.35477456613551234
+    },
+    {
+      "m_over_T": 10.0,
+      "r_times_T": 10.0,
+      "normalized_rate": 0.9997726650098726,
+      "scaled_local_spectrum": 0.35477456613551234
+    },
+    {
+      "m_over_T": 30.0,
+      "r_times_T": 0.0,
+      "normalized_rate": 0.0,
+      "scaled_local_spectrum": 0.9997975674292302
+    },
+    {
+      "m_over_T": 30.0,
+      "r_times_T": 0.0001,
+      "normalized_rate": 4.2709666111071236e-07,
+      "scaled_local_spectrum": 0.9997975674292302
+    },
+    {
+      "m_over_T": 30.0,
+      "r_times_T": 0.1,
+      "normalized_rate": 0.3330514994716909,
+      "scaled_local_spectrum": 0.9997975674292302
+    },
+    {
+      "m_over_T": 30.0,
+      "r_times_T": 1.0,
+      "normalized_rate": 0.9918664607718876,
+      "scaled_local_spectrum": 0.9997975674292302
+    },
+    {
+      "m_over_T": 30.0,
+      "r_times_T": 3.0,
+      "normalized_rate": 0.9991031105762462,
+      "scaled_local_spectrum": 0.9997975674292302
+    },
+    {
+      "m_over_T": 30.0,
+      "r_times_T": 10.0,
+      "normalized_rate": 0.9999193481165427,
+      "scaled_local_spectrum": 0.9997975674292302
+    }
+  ],
+  "assumptions": [
+    "free scalar mass eigenmodes; heavy unmixed Higgs matching",
+    "free homogeneous thermal scalar, zero chemical potential, m>0",
+    "fixed paths, heavy probe, negligible recoil and bath backreaction",
+    "regulated weak-coupling Markov limit, leading second order only"
+  ],
+  "open": [
+    "actual scalar state and abundance",
+    "laboratory apparatus and nuisance likelihood",
+    "interacting/unequal-temperature scalar baths",
+    "radiative stability and UV completion",
+    "finite-time renormalized dynamics beyond the leading thermal rate"
+  ]
+}

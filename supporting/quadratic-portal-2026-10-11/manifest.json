@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-10-11T22:34:57.481930+00:00",
+  "sources": [
+    {
+      "path": "/Users/christophermichaelbaird/Downloads/ToE-Collection_1of4_Part1_pp0001-2270.pdf",
+      "bytes": 8482468,
+      "sha256": "55127686d1df3cc2fb9248e6584b7149383c6dc828e1abddd5f1d8b73e85fd11"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/Downloads/ToE-Collection_2of4_Part2_pp2271-3774.pdf",
+      "bytes": 6808980,
+      "sha256": "74734933744dedbee3a64954474c5fbb6366386024f06a8840b5566e0aa5fe07"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/Downloads/ToE-Collection_3of4_Part3_pp3775-5544.pdf",
+      "bytes": 8886951,
+      "sha256": "d02ea2780689ca2b6889e4ec4f6259decc6416bc72d6319c8487dfa358e5a3dc"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/Downloads/ToE-Collection_4of4_Part4Nielsen_pp5545-7689.pdf",
+      "bytes": 27308436,
+      "sha256": "7cafb13ba0a3412245178f49379e3abba1d9f6c8fcb9ea8f376100ac0b3aaa25"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/work/gate1-public/Reservoir_Protocol_Note_2026-09-11_CORRECTED.tex",
+      "bytes": 46855,
+      "sha256": "c307980f63b95affd3496fccd16d735054a2f5d5748cf5e969ad34a94f108d6b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/research/toe-quadratic-portal-20261011/quadratic_portal_measurement_bridge.tex",
+      "bytes": 29683,
+      "sha256": "bb6e04d5188710227655c5085db2bbb4da0951c5676812ec38c18466f4cc3a4b"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/research/toe-quadratic-portal-20261011/check_quadratic_bridge.py",
+      "bytes": 13124,
+      "sha256": "60aefb52b141b69c99f26bd877867c48bfda56ebd1a96898a7c7185b13646884"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/research/toe-quadratic-portal-20261011/checks.json",
+      "bytes": 5842,
+      "sha256": "51ee945f5a2824e87e1796ea7e5f4491d99ae418bf2ff74830033881790ab643"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/research/toe-quadratic-portal-20261011/rate_shape.pdf",
+      "bytes": 21510,
+      "sha256": "7a07d08baea3574bdd494bc88eadeb40a5c79c72ead17ae71b89a81d5aab592c"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/research/toe-quadratic-portal-20261011/rate_shape.png",
+      "bytes": 75687,
+      "sha256": "29a63edfd60720c42022297496749a08f3abd3622b40aa5dde9b0ed96b334464"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/research/toe-quadratic-portal-20261011/research_state.json",
+      "bytes": 3886,
+      "sha256": "971818151959174448809a0e89a9bcaef4059530dc27a2626f96ebc962abe41e"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/pdf/Quadratic_Portal_Measurement_Bridge_2026-10-11.pdf",
+      "bytes": 351814,
+      "sha256": "794cfa0dd30a333b2b92538731d52ef2dadf384476272bd5be4ab82ea2f9ec58"
+    },
+    {
+      "path": "/Users/christophermichaelbaird/.codex/.chatgpt-projects/g-p-692f6a4c55bc8191803829546b141e2f/output/research/toe-public-data-20261011/data_catalog.json",
+      "bytes": 13684,
+      "sha256": "9e2fd1264aabc167fe44244ac22ba935814dc553c8eac07337cb2164ee017f97"
+    }
+  ],
+  "verification": {
+    "mathematical_status": "conditional_calculation_checks_passed",
+    "numerical_grid_cases": 24,
+    "pdf_pages": 10,
+    "visual_review": "all pages reviewed; no clipped or overlapping content; all references resolved",
+    "internal_cross_checks": [
+      "portal matching and width relation",
+      "thermal quadratic spectrum and normalization"
+    ],
+    "external_peer_review": false,
+    "experimental_model_fit_performed": false
+  },
+  "source_modifications": "none by this stage"
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Theory of Everything Research Notes, October 2026: Scalar-Portal Measurement Bridges, an Interferometry Data Audit and T-1 Spectral Matching",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "description": "<p>Four working notes from the MQGT-SCF / ZoraASI research program, dated 11–12 October 2026, with supporting scripts and checks.</p><ul><li><strong>Moving scalar probes and an interferometry data audit</strong> (11 Oct): a documented baseline reanalysis of a public sodium-cluster interference dataset (95 fringe scans, 3,895 count observations), and an extension of the scalar-portal calculation to moving, composite probes and mixed scalar species. No portal fit or exclusion is reported.</li><li><strong>Quadratic Higgs-portal interactions and a conditional measurement bridge</strong> (11 Oct): a thermal elastic-scattering channel for a massive scalar, coupled to matter through the symmetric Higgs portal, gives a calculable visibility-decay rate under stated assumptions.</li><li><strong>T-1: One-loop spectral gauge matching</strong> (12 Oct): the one-loop contribution of a stated fermion spectrum to the hypercharge kinetic and quartic terms in the four-copy sphere comparison model; the finite remainder does not fix a physical gauge coupling.</li><li><strong>T-1: A shared spectral-action normalization test</strong> (12 Oct): a conditional stationary radius for a stipulated common spectral action, and a counterexample showing that leading spectral moments do not fix the gauge strength.</li></ul><p>Supporting material includes LaTeX source, symbolic and numerical check scripts, results, and two earlier T-1 defect notes (10–11 Oct) as their original archives. The third-party sodium-cluster data (Zenodo record 17502163) are cited, not redistributed.</p><p><strong>Status:</strong> AI-assisted working notes (v0.1), not peer reviewed. Each note states its scope: conditional calculations and data audits, with no detection, no claim of new fundamental physics, and no completed Theory of Everything.</p>",
+  "creators": [
+    {
+      "name": "Baird, Christopher Michael",
+      "affiliation": "Independent researcher, ZoraASI"
+    }
+  ],
+  "keywords": [
+    "MQGT-SCF",
+    "Higgs portal",
+    "scalar field",
+    "matter-wave interferometry",
+    "decoherence",
+    "spectral action",
+    "gauge coupling",
+    "ZoraASI",
+    "Theory of Everything"
+  ],
+  "license": "cc-by-4.0",
+  "version": "1.0",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.14019809",
+      "relation": "references",
+      "resource_type": "publication",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.17502163",
+      "relation": "references",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1038/s41586-025-09917-9",
+      "relation": "references",
+      "resource_type": "publication",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "AI-assisted working notes prepared for the author within the ZoraASI research program (the T-1 notes state they were prepared with ChatGPT). Repository assembled by Claude (Anthropic); the notes are unchanged. Not peer reviewed."
+}

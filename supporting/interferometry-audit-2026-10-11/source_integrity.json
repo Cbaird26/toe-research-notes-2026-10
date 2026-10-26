@@ -1,0 +1,431 @@
+{
+  "source_archive_sha256": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
+  "source_archive_md5": "7917961b27676f4e9df3af6d3b01c374",
+  "original_files_compared": 105,
+  "all_original_files_byte_identical": true,
+  "files": [
+    {
+      "archive_path": "Na-Cluster-Interference/Macroscopicity_April2025.py",
+      "sha256": "be58622e0f7d234c34bba6bcfb9e12ec4a280900c18e7eba9853b05698415b27"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_10_s1.dat",
+      "sha256": "434c1fc1f1be8790b8b1863cba5345c5f64ff05102c5ce315ecf65de639cc4e3"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_11_s1.dat",
+      "sha256": "066b078f73a3868dc49c4f8a79971e63876cf41d03eb8142b65e16247bb3d0e4"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_12_s1.dat",
+      "sha256": "6d300d0af77cde44087a89720693b0c8798bb8d12e02714d7e879174a007dffa"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_13_s1.dat",
+      "sha256": "363820c57116411d8390943955ee70741437e805caeaba30ba3f408d43620fc3"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_14_s1.dat",
+      "sha256": "3752c1cb91428cbbe25c6a3e4e7769093b388c2df3e46524803bea1df5363015"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_15_s1.dat",
+      "sha256": "c11994a433835e3076f23ef3e2110ce1b00e9eace17732af7ebe99444d44493a"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_16_s1.dat",
+      "sha256": "2a4f583d5fdadd633380dc920a75042ee33ff4b858f9a283510d7acdd06812c6"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_17_s1.dat",
+      "sha256": "38e009fae6eb37fb1739b920b7b9247a7a9f52493914af29eeca195e9a393111"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_18_s1.dat",
+      "sha256": "13cbb0a191de465d982599f1f1a4e3fccb8dd99c2d868085a7ec484b31b7fceb"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_19_s1.dat",
+      "sha256": "42b77557e4df5d5c7720fdaf36c820cbc0b59bbf5e144b8ce35ec5557bf48f77"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_1_s1.dat",
+      "sha256": "b1343840d38adf35ef1f88073d7a653b7cc45f0f490ce9bd6d96b5384667e701"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_20_s1.dat",
+      "sha256": "73bd8094b98b21e5be580eb97d35db95450fbb06098fd717e5f02b5d837e2c46"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_21_s1.dat",
+      "sha256": "e82a1ba380dcd16465a30780a10f16e9c0d12fbe156a2667a4a62625b2288235"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_22_s1.dat",
+      "sha256": "7b75742a0a313e36dffca3b4261bde9c5a623284d6709dd4159b2aab968adfc3"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_23_s1.dat",
+      "sha256": "ccb12c67d5729d000ef76bef335339a6158c7d9b9a7ea5b86b984123a32254a5"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_24_s1.dat",
+      "sha256": "5f8c03027918c9f481113f88c4dafa7c3a7c2b5425be6b2243f8fb5241e19450"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_25_s1.dat",
+      "sha256": "a53bd93a85d94724e6cc0d6d29b97926cbdaf5b60b8eaf233588c321aa380d47"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_26_s1.dat",
+      "sha256": "460d3e9ba011ca41faa1b1c0ac49a00ba2aa010fbbfc4acf2f90d64b1e17a615"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_27_s1.dat",
+      "sha256": "bd3f5618fe215c22d38db12425198afa4b3d8f8c24420203aa98e44a3eaafd3f"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_28_s1.dat",
+      "sha256": "8e44cac69b1e31f070524781cc5ce4bc94cb3c377c9ed78146582e8e61bd2cb8"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_29_s1.dat",
+      "sha256": "15be750f238ca6f1ec695f803649dc15fabdc4adbf3cc62bcad61699d9f37ff6"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_2_s1.dat",
+      "sha256": "710bb6e7a84c6ebb329f11c9f2dfdb9e07b1363a45de08836acf5a0f00860ae5"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_30_s1.dat",
+      "sha256": "3b52d62fc27ae12a64694ed940726f60772793d06815be9d1b7948dfaa6c0eb2"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_31_s1.dat",
+      "sha256": "6449ac410eddef455624e6e46435467a8b1f618bd5474d0f33cc1e9e691e940e"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_32_s1.dat",
+      "sha256": "1c9d546a5f5bbb3d6884b29acd6dc6c04ac1965339505082c4306c60fb37fa4c"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_33_s1.dat",
+      "sha256": "cfbcc7f7b0241b11df15a1392f5e78cecc7166781ea2e54762561d2627b7451b"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_34_s1.dat",
+      "sha256": "ef30f44aab5a7a52eae13c5e3cb796fb4eb1945b4931520fc0e943aae1b6d0e3"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_35_s1.dat",
+      "sha256": "ea3f17dc0a3abfeee93920b196052598c994f6dbc1d9f78e7729e4e92c58c257"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_36_s1.dat",
+      "sha256": "64169c30daa4c9412bb8a603e50ccdfe34ba641acbf6669b81a095d1e15e1750"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_37_s1.dat",
+      "sha256": "fed76a9928ddf342040adf1e61b224a780143c6f8bb791860be3b73907d605f7"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_38_s1.dat",
+      "sha256": "4d5497bfbd4a81ccd6fc23d58fa6f5e9c8cca8ed4eca492815eeda664a9023ba"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_39_s1.dat",
+      "sha256": "2d0772d1fcb1e1447a77e5042732bfc9bc6ab2c4bee65dbc980e0efb79eb0f47"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_3_s1.dat",
+      "sha256": "aa79a5574cc27c7a59b73efffb126ef5c1ba227be7a948e7debba85ad60060a4"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_40_s1.dat",
+      "sha256": "ba0afc2abce090b630c70f0b28ab6dd93ffdd28575914e86f44deb4baafca23e"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_41_s1.dat",
+      "sha256": "2cce27e8537002c4e8f60b575c87babc0826b998d7abf493346485c1261feecf"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_42_s1.dat",
+      "sha256": "b088b2b95d995427325cfd37a9073b361ba35eb33b7ba4e3f58f51360a8a6c15"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_43_s1.dat",
+      "sha256": "c846e714a0bfc0f4134f760de5d48ddc9e1819bd44c0c7adf9dc3380d5ec31d3"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_44_s1.dat",
+      "sha256": "09790b1fcdfa440248f85516bf4dfeac1df99a5585489fe07d7410950471bf4b"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_45_s1.dat",
+      "sha256": "fbc169a3feff4a9f8d43af1a592b42424e253959b6061c614f36bddf17f4e7cb"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_46_s1.dat",
+      "sha256": "54bbed4a0b2a79e8a8c29434eb1e96b5b941911e4263e714325267619fbf25c4"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_47_s1.dat",
+      "sha256": "ddd48fdbb5756a1b2aab2768bf56cbc27457c03e2a5d33778197fbdcc40a1354"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_48_s1.dat",
+      "sha256": "3ab2caa28e50835d8ff29565ee803786309793bfe3bb2e4fbe1b0e2568f43ad9"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_49_s1.dat",
+      "sha256": "09f33a6b8b6b1667bbc65f9c68c7038532f67f3803c302baee10a0ed2db3144b"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_4_s1.dat",
+      "sha256": "890d348266e0be29362277494f1665b1924eb275c6a9eb0122bfb31803e7cc06"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_50_s1.dat",
+      "sha256": "ff7d9e5aa346ddf1fb9a3356913cfbd7c7b0b0f5faeec48f5738b06fd727e544"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_51_s1.dat",
+      "sha256": "a594262a8d2bc474e08d05199f4f38e4166617b6b6647fadc6e8319ccf096ed5"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_52_s1.dat",
+      "sha256": "3bc314072f6263ae4d826e23ff82d07f71f84ec6c7c30dcbc0b4818e3fcd1a75"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_53_s1.dat",
+      "sha256": "00cdf0d702bffc3353b9b0482b4cd391170e104f36f2028970267a35eebec792"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_54_s1.dat",
+      "sha256": "5ada4700d1657d98a6a9537f6d9e04cb0da6bd37ed044b9380eae0110cb7fd96"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_55_s1.dat",
+      "sha256": "b13ea4e1cb407fc13e1a13bbcfa4a5c0a33fd7d8ba725b48d5be8776bcc429f4"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_56_s1.dat",
+      "sha256": "cbdd971112ae8a15e7ce12b0ca835b7d022d760648ee7ce62a3e1803671ac685"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_57_s1.dat",
+      "sha256": "cb37b647df905367c827f54dcf5eae07edcb62c8789d9e317e436d5e2cccbcf4"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_58_s1.dat",
+      "sha256": "d0f94b591a2af87db8f634da02af4f73906aa07d2c86d2cf51d1d1ee92813c3d"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_59_s1.dat",
+      "sha256": "8aac47dc821823454b0297c01ef039fb248ccad6551a650da00a21e1c2c75fef"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_5_s1.dat",
+      "sha256": "c572e3a29551ea3fcce081b4eaf35a8b190727fd8d19973e70851f836652ec05"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_60_s1.dat",
+      "sha256": "82121f22d76e4c6f23d237b2c9a0c2e788e66d343aa519e11c900c86ed8ecd77"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_61_s1.dat",
+      "sha256": "22d5dde0c78befb1b157cdfb50c244399da73083eb26b045c9c505cb0fd16e31"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_62_s1.dat",
+      "sha256": "87fd40424b428989a255520ebbab6208db20e7395667888bad7d814fee1fc415"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_63_s1.dat",
+      "sha256": "417521afd941e72cdab11f141fb6c231b30cf13b296230072cf6ee59fb444794"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_64_s1.dat",
+      "sha256": "1582672f2763d5394ecd9996494b4cf7ae34d1dff7c10423d68d5287812405d2"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_65_s1.dat",
+      "sha256": "0681d732fb2b573f0db9ee271c23ea793e0cd8a2c417f94161be52e34d8ce6c1"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_66_s1.dat",
+      "sha256": "877b1e71babb16c5f7e5d82956cb04c8885c80e896a2d6384addd7d4d734ac8c"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_67_s1.dat",
+      "sha256": "3072368789ef8adf284b60b9f61ec0a7457b8892b87a4e9a76ac71ed529ad373"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_68_s1.dat",
+      "sha256": "22a01371448e8e6a7374a55389118affb0e34790561aaf912d291712041a122d"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_69_s1.dat",
+      "sha256": "64d0b0520d3a46c608a910e01eb3d78e725220c5c7c1983a29c9e005e00e4be3"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_6_s1.dat",
+      "sha256": "17024a4a4fa859f7cf8a728f04936e1db18b259f4bd182b82abb1ad6b80280f7"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_70_s1.dat",
+      "sha256": "ee40e1f7b10b8fdf53cf59458a6d9504a964c7caaafce6ac69a22ad494649801"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_71_s1.dat",
+      "sha256": "b3e775f04b8fabd6026d55abd7c414469645c3f6c577d7e9d3829a623f19cfa7"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_72_s1.dat",
+      "sha256": "80ca554df50327cae84a646877b21c00aa19fd405ac45c785dce968c97c28c56"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_73_s1.dat",
+      "sha256": "9dfdc4866c3eee629d54830acbd7c7256a4f4ad4453b2d3b9a51ccfd32559624"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_74_s1.dat",
+      "sha256": "10cd8bd8616e2ba181d8a9be4be269bfdf34d54b4854f8003467e4b6a3719c22"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_75_s1.dat",
+      "sha256": "52db661fbf4055b594077e5372473e9b5f7b92b6737e99ad9b524296d4695e45"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_76_s1.dat",
+      "sha256": "d223e3624bf9ea94801155ca13132196ebe40124a274be4bd87fff75bd3c4777"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_77_s1.dat",
+      "sha256": "43917dd9f50fc06231d547c19177e073b937677e9fba6d37555257b70fd80c11"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_78_s1.dat",
+      "sha256": "f1a022f8bd361246f6c52531cd25f5c6f86a1eec8799a996089427904645030c"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_79_s1.dat",
+      "sha256": "8e244c6404cf493268ce4829e792cecbb8991430f89ff4fc8e401ec23964ddf0"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_7_s1.dat",
+      "sha256": "d10bcab63adf0997a856528b8d053999519199797c5e699de68c1279a41a817c"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_80_s1.dat",
+      "sha256": "384c7f6c603a40b82845cbb905141fb023530b35f8fa6a6d65fcec5d1bed6349"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_81_s1.dat",
+      "sha256": "69d062ef5cf9eeabe7985a4a3a2aee8343cd95ba876276a049067d8205fb45b8"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_82_s1.dat",
+      "sha256": "e9fb2dac33717f3ff545017208a2de9d15b3f8b1b6b15b55b55783b311590e02"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_83_s1.dat",
+      "sha256": "159fee393734231a7149cebd64bc8709c8c77ec1ec4640fb038f082a7831eb93"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_84_s1.dat",
+      "sha256": "09ec1351d3961a97b0d00357c403e47273e55b6d318426e54a0659012424ac2f"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_85_s1.dat",
+      "sha256": "e23b89a1bd3cb315a3784770ffc9ac444b65bac57605548f8dcd9e293585e5fa"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_86_s1.dat",
+      "sha256": "ffe8cfac65814657a73411e38a760b3cdf51131c2121d69a7edf9a08c7871d59"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_87_s1.dat",
+      "sha256": "daddc89781aea02fb290d4c4d78f306fdb2d30a8c6fa277abc75779e326d44a2"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_88_s1.dat",
+      "sha256": "c98cd98104e94ddeca7a081824f8eb02225104e8ea54afc474100c259fdb2758"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_89_s1.dat",
+      "sha256": "f3badb854c6a630c8d530fb6ad195b8723971896eafcdff221cad79ab7875ecc"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_8_s1.dat",
+      "sha256": "468ce81821daa4334c9cfeecc92ee4f33b0c842717cfdd7aac14a10f3cb3e7a9"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_90_s1.dat",
+      "sha256": "a717264e99cadfa0c4cb6e1f6f1fd73e5da04a19c8266f54ae18b2c7e787bd24"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_91_s1.dat",
+      "sha256": "3b6e8169b9554f9ef9aabb8fc1d5592344482e1ed198fb258f9e7b0d5ef65669"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_92_s1.dat",
+      "sha256": "c9e07b480f7e714d2158197f3749728cfbc774d61b756f2eac5471b1b88754e6"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_93_s1.dat",
+      "sha256": "2577a69a9adac5eb554c371ca6b95bab8569149d425370642b98623425acd01b"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_94_s1.dat",
+      "sha256": "0d4313539d0624e0e6f3c55dc60ea96fd491e88bdb949085332f3a17dd84c9ff"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_95_s1.dat",
+      "sha256": "511a8da26cbfb1dbc355d57a3539fc7b1c211a16c1a53f97830582ca51e1f858"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Interference Scans/Sodium_int_powerscan_9_s1.dat",
+      "sha256": "e25c31c999184f08aa031cc6dae6671f18dda488e839842edf2d5dccb8d8eb2e"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Mass spec/Sodium_He_60sccm_Ar_161sccm_356C_425nm_L12p5cm_HP_massscan_16.dat",
+      "sha256": "efb6ccf6d83d0a12fb45c8c421eff2d43317c1d77dcff891f800c75e99f23456"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Mass spec/Sodium_He_60sccm_Ar_161sccm_356C_425nm_L12p5cm_HP_massscan_4.dat",
+      "sha256": "4cd1de43548e19888fa46d1ffd53d0e01f920eef0d81a85e55f8266a3cf3f858"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Mass spec/Sodium_He_60sccm_Ar_161sccm_356C_425nm_L12p5cm_HP_massscan_9.dat",
+      "sha256": "88d565096eda1f96c5a3ccf0255374aadd0e3af5912bc7fd9f9d160f72fbbab1"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Mass spec/Sodium_He_60sccm_Ar_161sccm_356C_425nm_L12p5cm_LP_massscan_8.dat",
+      "sha256": "3fae2bf77e1269c9c9bb256dc620d5da778da70ccc0dc345e532f1f4c884577d"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Mass spec/Sodium_He_60sccm_Ar_161sccm_356C_425nm_L12p5cm_LP_powerscan_17.dat",
+      "sha256": "ed6c7093e7c07d7c272d61cb20449835eea940a6878501a67e316174d272bef5"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/Na-Cluster/Data_April2025/22042025/Powerscan_85kTh_22042025.xlsx",
+      "sha256": "e5cbb9cafae16796be412db449640bbb49b883ae554a9db5b02a89603cfe15a1"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/PowerScans_April2025.py",
+      "sha256": "c674322436b699612d7add8a9836e9394039aadee9efefabbc1fd4c0ca9a5588"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/README.txt",
+      "sha256": "003b2aaafe1a91a6fe070efcc53118cda4acd179b3ac9bf47987d5f55785ad00"
+    },
+    {
+      "archive_path": "Na-Cluster-Interference/talbotlau.py",
+      "sha256": "9dcdaf0f834af2e40f2a213ab58910a3f78f33bc25374af78b958281e778d65b"
+    }
+  ],
+  "result_script_hashes_match": true,
+  "final_pdf_pages": 6,
+  "final_pdf_all_pages_visually_reviewed": true
+}

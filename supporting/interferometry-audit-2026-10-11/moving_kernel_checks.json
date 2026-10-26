@@ -1,0 +1,133 @@
+{
+  "status": "conditional_moving_kernel_checks_passed",
+  "laboratory_fit": false,
+  "script_sha256": "41004c96bdbdbab58af76d2cb74721677f43fd6fe8cced22aef2587d971256b2",
+  "thermal_spectrum_energy_integral_cases": 36,
+  "max_spectrum_relative_error": 3.858984192986323e-46,
+  "max_detailed_balance_relative_error": 2.2113919251677235e-56,
+  "max_even_zero_frequency_limit_error": 4.994976676977253e-16,
+  "stationary_reduction": [
+    {
+      "m_over_T": 1,
+      "rT": 0.1,
+      "RT": 0,
+      "stationary_radial": 0.0011158531316697662,
+      "moving_at_zero": 0.0011158531316697682,
+      "relative_difference": 1.7489433466513477e-15
+    },
+    {
+      "m_over_T": 1,
+      "rT": 1,
+      "RT": 0,
+      "stationary_radial": 0.02283270304415341,
+      "moving_at_zero": 0.022832703044153413,
+      "relative_difference": 1.5195077627228233e-16
+    },
+    {
+      "m_over_T": 1,
+      "rT": 1,
+      "RT": 0.3,
+      "stationary_radial": 0.0148610315019534,
+      "moving_at_zero": 0.0148610315019534,
+      "relative_difference": 0.0
+    },
+    {
+      "m_over_T": 10,
+      "rT": 1,
+      "RT": 0.3,
+      "stationary_radial": 5.340076172708009e-06,
+      "moving_at_zero": 5.340076172708011e-06,
+      "relative_difference": 4.758544184725147e-16
+    }
+  ],
+  "moving_quadrature": [
+    {
+      "m_over_T": 1,
+      "rT": 0.1,
+      "RT": 0,
+      "v": 0.2,
+      "rate": 0.00121067020801921,
+      "relative_quadrature_difference": 3.080653549286773e-14,
+      "relative_to_stationary": 1.0849727205654378
+    },
+    {
+      "m_over_T": 1,
+      "rT": 0.1,
+      "RT": 0,
+      "v": 0.5,
+      "rate": 0.001978617465226558,
+      "relative_quadrature_difference": 4.383675739408718e-15,
+      "relative_to_stationary": 1.77318807383347
+    },
+    {
+      "m_over_T": 1,
+      "rT": 1,
+      "RT": 0,
+      "v": 0.2,
+      "rate": 0.02398807518519981,
+      "relative_quadrature_difference": 1.1715204364609879e-14,
+      "relative_to_stationary": 1.0506016365566604
+    },
+    {
+      "m_over_T": 1,
+      "rT": 1,
+      "RT": 0,
+      "v": 0.5,
+      "rate": 0.03217294348802806,
+      "relative_quadrature_difference": 9.705367051417517e-15,
+      "relative_to_stationary": 1.409072917289411
+    },
+    {
+      "m_over_T": 1,
+      "rT": 1,
+      "RT": 0.3,
+      "v": 0.2,
+      "rate": 0.015247076151376084,
+      "relative_quadrature_difference": 1.0694772238486063e-14,
+      "relative_to_stationary": 1.02597697537832
+    },
+    {
+      "m_over_T": 1,
+      "rT": 1,
+      "RT": 0.3,
+      "v": 0.5,
+      "rate": 0.01749272084105207,
+      "relative_quadrature_difference": 1.0115167111932968e-14,
+      "relative_to_stationary": 1.177086586402347
+    },
+    {
+      "m_over_T": 10,
+      "rT": 1,
+      "RT": 0.3,
+      "v": 0.2,
+      "rate": 5.309034992298858e-06,
+      "relative_quadrature_difference": 3.1047565475606877e-13,
+      "relative_to_stationary": 0.9941871277852186
+    },
+    {
+      "m_over_T": 10,
+      "rT": 1,
+      "RT": 0.3,
+      "v": 0.5,
+      "rate": 4.853976813677458e-06,
+      "relative_quadrature_difference": 5.231596427722725e-13,
+      "relative_to_stationary": 0.908971455966321
+    }
+  ],
+  "triangular_harmonic_gaussian_reduction_error": 8.093012984996095e-13,
+  "two_mass_extension": {
+    "ordered_scattering_cases": 9,
+    "max_energy_integral_relative_error": 4.5228942866593316e-55,
+    "max_species_reversed_detailed_balance_error": 5.510023742103874e-56,
+    "max_static_mixed_fourier_relative_error": 2.0775976855581425e-12
+  },
+  "beam_velocity_over_c_at_158mps": 5.270312704130802e-07,
+  "scope": [
+    "massive free thermal Gaussian scalar state",
+    "quadratic composite operator at leading weak coupling",
+    "spacelike transfers only",
+    "prescribed rigid heavy probe; negligible recoil",
+    "Markov and slow trajectory approximation still conditional",
+    "no experimentally inferred bath parameters"
+  ]
+}
