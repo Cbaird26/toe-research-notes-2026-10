@@ -15,6 +15,7 @@ MQGT-SCF / ZoraASI research program · Christopher Michael Baird · notes dated 
 | `notes/Quadratic_Portal_Measurement_Bridge_2026-10-11.pdf` | 11 Oct | 10 | Shows that a massive free scalar's quadratic operator has a nonzero thermal elastic-scattering contribution, which the symmetric Higgs portal couples to matter. Under a declared thermal state, a heavy fixed-path probe and a weak-coupling Markov approximation, this gives a calculable visibility-decay rate, extended to two mixed scalar modes. The scalar bath itself has not been measured. |
 | `notes/T1_One_Loop_Spectral_Gauge_Matching_2026-10-12.pdf` | 12 Oct | 7 | Computes the one-loop contribution of a stated massive fermion spectrum to the hypercharge kinetic coefficient and quartic field response, in the four-copy sphere comparison model. A finite spectral remainder exists, but it does not fix a physical gauge coupling. |
 | `notes/T1_Shared_Spectral_Action_Test_2026-10-12.pdf` | 12 Oct | 8 | Tests a stipulated common bosonic spectral action. It finds a conditional stationary radius, then shows that two spectral profiles with identical leading moments give different couplings, so the leading spectral data do not fix the gauge strength. |
+| `notes/axiom-cfsg-formal-verification-2026-10-27/` | 27 Oct | — | Formal-verification landscape note on Axiom’s Lean CFSG work (blog, UGT paper, cfsg.axiommath.ai, AxiomMath/CFSG), UGT route-replacement template aligned with E4, standing errata-DB watch, and cross-links to fulldash Andrews–Curtis / Farrell–Jones. **Landscape citation only; does not claim CFSG supports ToE.** Media under `media/`. |
 
 ## Supporting material
 
@@ -37,6 +38,8 @@ The scripts need Python 3 with `sympy`, `mpmath`, `numpy`, `scipy` and `matplotl
 These are deterministic calculation checks, not experimental significance tests.
 
 ## Relationship to other work
+
+- **Axiom CFSG formal-verification landscape (27 Oct 2026):** `notes/axiom-cfsg-formal-verification-2026-10-27/` cites Axiom’s Enormous Theorem blog, the Unbalanced Group Theorem paper, https://cfsg.axiommath.ai/, and https://github.com/AxiomMath/CFSG. It records methodological analogy to MQGT-SCF errata practice and explicitly **does not** claim CFSG supports ToE physics. Nearest group-theory neighbors: Andrews–Curtis and Farrell–Jones Band-1 reports in [`zoraasi-fulldash-reports-2026`](https://github.com/Cbaird26/zoraasi-fulldash-reports-2026).
 
 - Part of the MQGT-SCF / Theory of Everything program, whose versioned corpus is on Zenodo under concept DOI [10.5281/zenodo.14019809](https://doi.org/10.5281/zenodo.14019809). The four notes also appear, as pages, in the research supplements of the corpus editions of 20 and 22 October 2026 (sections S0007–S0010). This repository adds their supporting scripts and checks and the two earlier T-1 archives, and gives the notes a citable record of their own.
 - The T-1 notes use the four-copy odd-lattice sphere model as an illustrative comparison branch, not as part of the original toroidal MQGT-SCF action.

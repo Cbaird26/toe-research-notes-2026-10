@@ -1,0 +1,1728 @@
+                                                     THE UNBALANCED GROUP THEOREM
+
+                                                                            AXIOM MATH
+
+
+                              Abstract. The classification of finite simple groups (CFSG) identifies the basic building blocks of all
+                              finite groups. It grew from nineteenth-century work of Galois and Jordan into a collective effort involving
+                              many mathematicians, with Gorenstein playing a central organizing role. Its proof is a vast network of
+                              interdependent results such as the Feit–Thompson odd-order theorem, the signalizer functor theorem, and
+                              Aschbacher’s classical involution theorem. The original papers make up the first-generation proof. The
+                              second-generation treatment, initiated by Gorenstein, Lyons, and Solomon, reorganizes and simplifies much
+                              of this work.
+                                  A key structural result in the first-generation program is the Unbalanced Group Theorem (UGT). Under
+                              the inductive hypotheses of the classification, it says that a nontrivial subgroup of odd order normal in the
+                              centralizer of an involution forces the ambient simple group to be a group of Lie type in odd characteristic
+hexagon:2610.00575v1
+
+
+
+
+                              or one of the alternating groups of certain degrees.
+                                  While formalizing the first-generation proof, we found counterexamples to a closure assertion used in
+                              a published route to UGT. This obstruction concerns that particular argument. UGT also has other
+                              proofs. Here we explain the obstruction and develop an alternative argument for the simple-group case
+                              using Solomon’s 1976 theory of maximal 2-components, which provides a framework for comparing the
+                              simple pieces arising in different involution centralizers.
+
+
+
+
+                                                                            1. Overview
+                          The classification of finite simple groups (CFSG) is a monumental achievement in the history of mathe-
+                       matics. A group is simple if it is nontrivial and has no normal subgroups other than itself and the identity
+                       subgroup. Every finite group can be broken into simple factors by a composition series. Indeed, the
+                       Jordan–Hölder theorem says that the resulting factors, counted with multiplicity, do not depend on the
+                       series. Classifying these factors does not tell us every way to assemble a finite group, but it tells us which
+                       building blocks are available. The CFSG catalogs every finite simple group:
+                       Theorem (Classification of finite simple groups). Every finite simple group is either cyclic of prime order,
+                       an alternating group An for n ≥ 5, a simple group of Lie type, or one of the twenty-six sporadic groups,
+                       named after their discoverers apart from the Baby Monster and the Monster.
+                          The proof grew into a collective enterprise spanning much of the twentieth century. Richard Brauer
+                       made centralizers of elements of order two central to the recognition of simple groups. Walter Feit and
+                       John Thompson’s odd-order theorem, published in 1963, showed that every nonabelian finite simple group
+                       has such an element [11]. Michio Suzuki and Thompson made powerful tools for recovering a group from
+                       its subgroups, while Daniel Gorenstein gave the effort a guiding program and an organizing framework.
+                       Michael Aschbacher, Richard Lyons, Ronald Solomon, and many others supplied the structural and recog-
+                       nition theorems that carried that program forward. Solomon’s historical account [25] describes both the
+                       ideas and the extraordinary collaboration behind them.
+                          What is now referred to as the first-generation proof is made up of an extensive web of papers, whose
+                       main framework was already established by the early 1980s. Gorenstein’s 1983 volume [16] records much
+                       of the relevant work. Work toward completion and verification continued. For example, the substantial
+                       remaining case of quasithin groups was resolved by Aschbacher and Stephen Smith in work published in
+                       2004. Aschbacher’s account [3] explains the distinction between the early announcements and the work
+                       needed to secure the proof. Beginning in the early 1980s, Gorenstein, Lyons, and Solomon also undertook
+
+                                                                                   1
+2                                              AXIOM MATH
+
+
+a second-generation project, seeking to reorganize and simplify large parts of the proof into a systematic
+series of volumes. These efforts reflect the scale of the achievement.
+   CFSG should be thought of as a problem of identification. Suppose there were a finite simple group
+of smallest order missing from the “known list”. All the simple groups arising as sections of its proper
+subgroups would already be known. One then examines those subgroups, compares the information they
+provide, and proves that the supposedly new group must itself be one of the known groups. To this end,
+group theorists have made great use of centralizers of involutions: the subgroups consisting of all elements
+that commute with a given element of order two. Such centralizers are proper subgroups of a nonabelian
+simple group, but their structure can constrain the whole group.
+   The Unbalanced Group Theorem (UGT) is one of the key results that makes this “local-to-global”
+strategy work. Roughly speaking, if even one involution centralizer has a nontrivial normal subgroup of
+odd order, then the ambient simple group belongs to particular familiar families.
+   To make this precise, we recall some definitions. Throughout, all groups in this paper are finite. Let G
+be a group. An involution is an element of order two. The centralizer of a subset A of G is
+                               CG (A) = {g ∈ G : ga = ag for every a ∈ A}.
+We denote this centralizer by CG (t) when A = {t}. The odd core O(G) = O2′ (G) is the largest normal
+subgroup of G of odd order. It exists because the product of two normal subgroups of odd order is again
+a normal subgroup of odd order. The subscript 2′ means “prime to two.”
+  Normality depends on the ambient group. In particular, a subgroup can be normal in CG (t) without
+being normal in G. Although a nonabelian simple group G has no nontrivial normal subgroup of odd
+order, an involution centralizer CG (t) may have one. The unbalanced-group problem asks what this tells
+us about G.
+Problem 1.1 (Unbalanced-group problem: simple-group case). Which nonabelian finite simple groups G
+contain an involution t for which O(CG (t)) ̸= 1?
+   Such a simple group is called unbalanced. Generally, a finite group G is unbalanced if O(CG (t)) ≰ O(G)
+for some involution t ∈ G. For a nonabelian simple group G, the Feit–Thompson theorem [11] implies G
+has even order and hence O(G) = 1, so the two conditions agree.
+   The Unbalanced Group Theorem answers this question under the inductive hypothesis used in the
+classification program, which we now make precise. A section of a group X is a quotient A/N , where
+A ≤ X and N ⊴ A. Let K be the catalog of known nonabelian finite simple groups. Namely, they are
+the alternating groups, the simple groups of Lie type, and the twenty-six sporadic groups. A K-group is
+a group whose nonabelian simple sections belong to this catalog. A group is K-proper if every proper
+subgroup is a K-group. This condition is natural in a classification proof. If G is a nonabelian simple
+group of least order outside the catalog, every nonabelian simple section of a proper subgroup has smaller
+order. Consequently G is K-proper.
+   Groups of Lie type are the finite groups constructed from algebraic groups over finite fields, together
+with their twisted analogs. The groups PSLn (q) are examples; they are the determinant-one matrices
+over the finite field of q elements modulo the scalar matrices. Similarly, PGLn (q) is the group of all
+invertible matrices modulo the nonzero scalar matrices. We say that a simple group is of odd Lie type if
+it is isomorphic to a simple group of Lie type in odd characteristic. There are small coincidences such as
+A5 ∼= PSL2 (5). We now state the simple-group case of the Unbalanced Group Theorem.
+Theorem 1.2 (UGT). Let G be a nonabelian simple K-proper group. If O(CG (t)) ̸= 1 for some involution
+t ∈ G, then either G is of odd Lie type, or G ∼
+                                              = A4a+3 for some positive integer a.
+Remark 1.3. The version of UGT stated above has been formalized in Lean in the Axiom Math CFSG
+repository. Our project website provides a link to the formal proof.
+  Theorem 1.2 gives an important reduction in the classification program. Suppose that G were a non-
+abelian simple group of smallest order outside the known catalog. Its proper subgroups satisfy the required
+                                                                                                               3
+
+
+inductive hypothesis. If O(CG (t)) ̸= 1 for some involution t, the theorem would identify G with a group
+in the catalog, a contradiction. Therefore, any such counterexample must satisfy
+                                O(CG (t)) = 1      for every involution t ∈ G.
+UGT therefore removes all unbalanced groups from the remaining classification problem.
+   The theorem also has an important connection with the B-theorem. Roughly speaking, the B-theorem
+ensures that the simple pieces visible after removing the odd core of an involution centralizer can be
+realized by suitable subgroups of the centralizer itself. More precisely, when O(G) = 1, every quasisimple
+component of CG (t)/O(CG (t)) is the image of a quasisimple component of CG (t). We define components in
+Section 2. This lifting property allows one to study actual subgroups of G, compare them across different
+centralizers, and apply recognition theorems to identify G.
+   For a smallest counterexample to CFSG, the displayed consequence of UGT makes this lifting property
+immediate. Namely, there is no odd core to remove. The corresponding B-property for its proper subgroups
+and their sections follows from independently established results for K-groups. Therefore, the simple-group
+form of UGT supplies the ambient reduction needed here without requiring an independent proof of the
+unrestricted B-theorem as an additional input. For the historical relationship between the two theorems,
+see [13, §1], [16, Chapter 3], and [5, §§1.7–1.8].
+   The restriction to involutions in G distinguishes our statement from some other formulations of UGT.
+Remark 1.4. More general versions of UGT treat involutions acting from outside a simple normal sub-
+group. Theorem 1.2 is the simple-group form required for the classification induction.
+  For alternating groups, three fixed points of an involution account for the nontrivial odd core.
+Example 1.5. As noted above, the groups A4a+3 , for a ≥ 1, are unbalanced. Indeed, for A7 , let
+                                        t = (12)(34),     U = ⟨(567)⟩.
+The involution t fixes precisely the three points 5, 6, 7. Every element of CA7 (t) permutes these fixed points,
+so conjugation preserves U , the alternating group on those three points. Therefore, U is normal in CA7 (t)
+with order three, and consequently
+                                              1 ̸= U ≤ O(CA7 (t)).
+Hence A7 is unbalanced, even though simplicity prevents U from being normal in A7 itself.
+   The same argument works in A4a+3 . Take an involution t consisting of 2a disjoint transpositions and
+fixing the remaining three points. The even number of transpositions ensures that t ∈ A4a+3 . The subgroup
+of order three generated by a 3-cycle on the fixed points is normal in CA4a+3 (t), so this centralizer has
+nontrivial odd core.
+1.1. An obstruction to an accepted route to UGT. Our work on formalizing CFSG requires making
+the hypotheses and dependencies of its many theorems explicit. In this effort, we have assembled a
+comprehensive errata list. Most of the errors are straightforward to correct: typographical errors, omitted
+hypotheses, and similar local issues. The difficulty considered here requires a change to an argument.
+   The first-generation proof of UGT is not contained in a single paper. Gilman–Solomon’s Theorem A
+[13, p. 59] proves the Unbalanced Group Conjecture for a group whose proper sections satisfy it, subject to
+Hypothesis S [13, p. 58], a list of standard-component problems, each asking that a group with a standard
+component of a specified type be identified. These problems were settled in separate papers over the
+following years, with the PSL3 (4) case completed by Cheng and Held in 1985 [10, pp. 147–148]. No single
+reference, as far as we know, records the point at which Hypothesis S was fully settled. Gorenstein’s 1983
+volume [16] develops the unbalanced-group argument; the historical overview in [17, pp. 40–41] describes
+the collective work on the related B2 -property. The pattern, a result announced modulo components
+completed later, is discussed in [3]. Walter’s 1986 memoir [27] gives a treatment organized around the
+signalizer functor method, and is recognized by Aschbacher [4, §4, p. 10] as a route to UGT and the
+B-conjecture. It is the treatment examined here.
+4                                                AXIOM MATH
+
+
+   Unexpectedly, our formalization found explicit counterexamples to a closure assertion in Walter’s proof
+of UGT [27], leaving a key step of that argument unjustified. We explain the obstruction and develop an
+alternative argument for the simple-group case using Solomon’s 1976 theory of maximal 2-components.
+Remark 1.6 (Other routes to UGT). This difficulty does not obstruct CFSG. In particular, we have
+Gorenstein’s account following an argument of Morton Harris [16, §4.5, p. 291]. There is also a proof of
+UGT through the second-generation work of Gorenstein, Lyons, and Solomon (GLS). Under the inductive
+hypothesis of Theorem 1.2, the nontrivial odd-order normal subgroup places the simple group in GLS’s
+odd-type case. Their classification of that case [20, Part III, Chapter 12, Theorem 1.17] identifies it as
+a known group. Namely, the known-group analysis [19, Theorem 7.7.1], with these corrections [21], then
+gives the required UGT family restriction. This is a short deduction from substantial second-generation
+input, not a repair of the obstruction described below. A shorter deduction from the reductions used in
+this paper is recorded in Theorem 9.5.
+   We outline the proof route where the difficulty arises. The starting point is a nonabelian simple K-proper
+group G with an involution t such that O(CG (t)) ̸= 1. The goal is to show that G is in one of the families
+in Theorem 1.2. The reductions either identify G with one of the required groups or lead to a configuration
+involving two commuting involutions and a 2-component of one of their centralizers. A 2-component is a
+perfect subnormal subgroup whose quotient by its odd core is quasisimple; after further quotienting by the
+center, one obtains a nonabelian simple group (see Section 2).
+   The task is to find a 2-component whose structure and position in G allow a recognition theorem to
+identify G. To do this, the proof compares 2-components in different involution centralizers and selects
+one that is maximal with respect to these comparisons. Results of Thompson–Burgoyne and Aschbacher,
+together with the alternating-group analyses, handle many of the possibilities. The remaining cases require
+the work of Foote, Gilman–Solomon, Griess–Solomon, and Harris [2, 5, 9, 12, 13, 22, 23].
+   The difficulty arises in the comparison stage. The argument works with components whose associated
+simple quotients belong to a specified family. A later step requires a quotient obtained by taking an
+involution centralizer to remain in that family. The closure assertion used to justify this can fail. Namely,
+an involutory automorphism can have a centralizer with a component whose simple quotient lies outside the
+chosen family. Therefore, the inference placing the resulting component back in the family is unjustified.
+   This assertion is in John Walter’s 1986 memoir [27], in the preparation for Part II, Proposition 5.9(ii).
+The proposition appears on p. 145, with its proof on pp. 145–148. The passage on p. 136 following (5.2)
+introduces the family L0 consisting of the groups PSL2 (q) for odd prime powers q other than 9, Fermat
+                                                                   n
+primes, and Mersenne primes. A Fermat prime has the form 22 + 1 for an integer n ≥ 0, and a Mersenne
+prime has the form 2n − 1 for an integer n ≥ 2.
+   The obstruction comes from field involutions, automorphisms induced by the order-two automorphism
+of a quadratic extension of finite fields. For PSL2 (r2 ), this automorphism raises each matrix entry to its
+rth power. The following proposition shows how a group in L0 can have a field-involution centralizer whose
+component lies outside L0 .
+Proposition 1.7 (Field-involution centralizers). Let r ≥ 5 be an odd prime power and let σ be the auto-
+morphism of S = PSL2 (r2 ) induced by x 7→ xr on matrix entries. Then we have
+                     CS (σ) ∼= PGL2 (r),      E(CS (σ)) = L2′ (CS (σ)) ∼
+                                                                       = PSL2 (r).
+Here E and L2′ denote the ordinary and 2-layers, defined in Section 2.
+Proof. Put k = Fr and F = Fr2 , the fields with r and r2 elements. A projective matrix [A] ∈ PGL2 (F ) is
+fixed by σ precisely when Aσ = λA for a scalar λ. Divide A by any nonzero entry a. Since ar = λa, the
+matrix A/a is fixed entrywise, and has entries in k. Hence CPGL2 (F ) (σ) = PGL2 (k).
+   Every element of k × is a square in F × . For example, if g generates F × , then k × = ⟨g r+1 ⟩, and r + 1 is
+even. Therefore, every projective matrix over k has square determinant over F , and the entire fixed group
+lies in PSL2 (F ). This proves the centralizer assertion.
+                                                                                                                   5
+
+
+   The subgroup PSL2 (r) is nonabelian simple, perfect, and normal of index two in PGL2 (r). Any odd
+normal subgroup of the latter maps trivially to this quotient of order two, hence lies in PSL2 (r) and is
+trivial. The derived subgroup is PSL2 (r), so this is its unique component and its unique 2-component. □
+   Theorem 1.7 shows why the proposed closure fails. Start with S = PSL2 (49), which belongs to L0 . The
+number 49 is an odd prime power, is not 9, and is not a prime. The field involution fixes a subgroup
+isomorphic to PGL2 (7). The simple component of that subgroup is PSL2 (7), which does not belong to L0 ,
+because 7 is a Mersenne prime. Therefore, taking the component of an involution centralizer can carry us
+outside the chosen family. The same calculation gives the following three examples; the middle column
+records the simple component of the field-involution centralizer.
+
+                       Group in L0 Centralizer component Reason it is excluded
+                       PSL2 (49)       PSL2 (7)                   7 is a Mersenne prime
+                       PSL2 (81)       PSL2 (9)                   9 is excluded explicitly
+                       PSL2 (289)      PSL2 (17)                  17 is a Fermat prime
+
+Here the involution is an automorphism of S. It can be realized as an element of the larger group S ⋊ ⟨σ⟩;
+it is not an involution belonging to S itself.
+   We explain where the closure assertion enters Walter’s proof. The argument compares components in
+different involution centralizers and needs to show that a newly encountered component still belongs to a
+specified family. The type of a component is the isomorphism type of its nonabelian simple quotient, after
+removing its odd core and center. Knowing that two components have the same type transfers membership
+in a family only if one already knows that this common type belongs to that family.
+   On p. 146 of [27], the relevant family is denoted by M2 and consists of components of L0 -type. Starting
+from a component Lt , Walter forms
+                                                 Lt,s = L(CLt (s)),
+the layer of the centralizer of the involution s in Lt , using his notation for the layer. In the branch Mst ̸= Ms ,
+that is, when conjugation by t sends Ms to a different component, the proof identifies the type of Ms with
+that of Lt,s and uses this identification to place Ms in M2 .
+   The missing justification is the assertion that the type of Lt,s still belongs to L0 . Membership of the
+starting type in L0 does not establish this. Indeed, the calculation above shows that taking an involution
+centralizer can produce an excluded type. Equality of the types of Ms and Lt,s cannot supply the missing
+membership. For instance, if the resulting type is PSL2 (7), identifying another component with that type
+does not put either one back in L0 . The subsequent argument within M2 therefore requires an additional
+justification or a different comparison argument.
+   The scope of these counterexamples deserves emphasis.
+Remark 1.8. The examples above refute the closure assertion used in the proof of Proposition II.5.9(ii).
+They do not provide groups that violate its conclusion. Namely, we have identified a gap in this inference,
+not a counterexample to the proposition itself or to UGT.
+   Here we give an alternative argument. Rather than assuming that the list L0 survives every comparison,
+it keeps track of the actual components and the involutions used to compare them. Under suitable max-
+imality and rank hypotheses, we prove that the relevant comparisons preserve the simple quotient. The
+precise statement is Theorem 2.3 below, which is the main theorem of this paper. Solomon’s theory of
+maximal 2-components [26] supplies the method for this comparison argument. The maximality reductions
+come from Gilman–Solomon [13], and the final recognition uses the work of Foote and Harris as described in
+Section 9. We develop these arguments with the witnessing involutions and the passages through odd-core
+quotients made explicit.
+   Our description of the approach as first-generation refers to this component-comparison and recognition
+strategy. For a systematic exposition of component calculus and known-group calculations, we also cite the
+6                                               AXIOM MATH
+
+
+later volumes of Gorenstein, Lyons, and Solomon [18,19]. The date of an exposition should be distinguished
+from the provenance of the results it presents. Our GLS citations identify the precise statements used below;
+they do not constitute an appeal to the separate second-generation odd-type classification route described
+in Theorem 1.6.
+   Theorem 2.3 is proved in Sections 3–8, and we apply it to UGT in Section 9. Under its maximality and
+rank hypotheses, that theorem shows that the allowed comparisons preserve the simple top. In Section 9,
+we combine this control with the reductions of Gilman–Solomon and the recognition theorems of Foote
+and Harris to deduce the simple-group case of UGT. This is the route formalized by AxiomProver.
+   The same reductions also yield a shorter deduction of UGT, since the GS-maximality they establish
+already satisfies Foote’s hypothesis; see Theorem 9.5. On the other hand, Theorem 2.3 is also stronger
+than what is needed for UGT and we believe it to be of independent interest. Thus we choose to structure
+this paper around the proof of the full Theorem 2.3.
+
+                                             2. Preliminaries
+   The comparison argument uses components, their simple quotients, and the involutions through which
+they are compared. We introduce these notions, state the comparison theorem, and collect its basic inputs.
+Throughout, all groups are finite. A group of order a power of two is a 2-group. We write Sn and An
+for the symmetric and alternating groups on {1, . . . , n}, respectively. We use O(X) for the largest normal
+subgroup of X of odd order, and O2 (X) for its largest normal 2-subgroup, called its 2-core. The trivial
+group and its identity element are both denoted by 1. For subgroups A, B ≤ X, we have the commutator
+subgroup
+                                     [A, B] = ⟨a−1 b−1 ab : a ∈ A, b ∈ B⟩.
+For an element b, write [A, b] = ⟨a b−1 ab : a ∈ A⟩. Write X ′ = [X, X], and define the derived series by
+                                     −1
+
+X (0) = X and X (i+1) = (X (i) )′ . Its eventual constant term is the perfect residual X (∞) . A group X is
+perfect if X ′ = X and solvable if X (∞) = 1. Every perfect subgroup of X is contained in X (∞) .
+   A subgroup J is subnormal in X if there is a chain J = J0 ⊴ J1 ⊴ · · · ⊴ Jn = X. We write Z(X) for
+the center of X. A group J is quasisimple if it is perfect and J/Z(J) is nonabelian simple. A covering
+group of a nonabelian simple group T is a quasisimple group Q with Q/Z(Q) ∼       = T . It is a perfect double
+cover if |Z(Q)| = 2. An ordinary component of X is a subnormal quasisimple subgroup. Distinct ordinary
+components commute; their product is the layer E(X). A group that is a product of commuting quasisimple
+subgroups is semisimple. Such a product is a central product: each factor meets the product of the others
+in its center.
+   A 2-component of X is a perfect subnormal subgroup J for which J/O(J) is quasisimple. A local
+2-component of G is a 2-component of CG (a) for some involution a. When distinguishing these from
+components of G itself, we call the latter global components. The product of the 2-components of X is
+the 2-layer L2′ (X). Each 2-component is normal in the 2-layer. Distinct 2-components commute modulo
+O(X), although they need not commute in X. Define
+                          Z ∗ (X)/O(X) = Z(X/O(X))        and   τ (X) = X/Z ∗ (X).
+Thus, Z ∗ (X) is the inverse image of Z(X/O(X)). If J is a 2-component, then τ (J) is nonabelian simple.
+We call τ (J) its simple top, and the isomorphism class of τ (J) its type. For a group Q, a group M is
+odd-by-Q if M/O(M ) ∼  = Q.
+                 2′
+   The group O (X) is the smallest normal subgroup of X with odd-order quotient. Equivalently, it is
+generated by the elements of X whose orders are powers of two. Such elements are called 2-elements. The
+            ′
+symbols O2 (X) and O2′ (X) = O(X) have different meanings.
+   An elementary abelian 2-group has the form C2d ; the 2-rank m2 (X) is the largest rank of such a subgroup
+of X. A fourgroup is a group isomorphic to C22 , and a line in an elementary abelian 2-group is a subgroup
+of order two. We write Inv(X) for the set of involutions of X and U # = U \ {1}. For an abelian 2-group
+                                                                                                           7
+
+
+P , let Ω1 (P ) = {x ∈ P : x2 = 1}. We write Syl2 (X) for the set of Sylow 2-subgroups of X and |X|2 for
+the largest power of two dividing |X|.
+   For subsets A, B ⊆ X, write CX (A, B) = CX (A) ∩ CX (B), allowing either argument to be a single
+element. Conjugation is written xg = g −1 xg and M g = g −1 M g. We write NX (M ) for the normalizer of
+M in X. A 2-local subgroup of X is NX (Q) for a nontrivial 2-subgroup Q ≤ X. For subgroups A, B, the
+notation ⟨AB ⟩ denotes the group generated by Ab for b ∈ B. In particular, ⟨AX ⟩ is the normal closure of
+A in X when A ≤ X.
+   For M ≤ X, put
+                                 CX (M ) = {g ∈ NX (M ) : [M, g] ≤ O(M )}.
+This is the kernel of the action of NX (M ) on M/O(M ). For a perfect group M such that M/O(M ) is
+quasisimple, and a 2-subgroup U ≤ CG (M ), write
+                                  MU = CM (U )(∞)      and   Mu = M⟨u⟩ .
+We will repeatedly use that MU O(M ) = M ; this is proved in Theorem 2.4. We say that a subgroup D ≤ M
+covers M/O(M ) if DO(M ) = M .
+  The symbols Aut(X) and Inn(X) denote the automorphism group and its subgroup of inner automor-
+phisms, and Out(X) = Aut(X)/ Inn(X). A finite group is nilpotent if it is the direct product of its Sylow
+subgroups. The Fitting subgroup F (X) is the largest nilpotent normal subgroup of X. The generalized
+Fitting subgroup is F ∗ (X) = F (X)E(X). We use the standard theorem
+                                           CX (F ∗ (X)) ≤ F ∗ (X)
+from [18, Theorem 3.6]. In particular, if O(X) = 1, then F (X) = O2 (X). Finally, O2′ ,2 (X) is given by
+                                     O2′ ,2 (X)/O(X) = O2 (X/O(X)).
+2.1. Comparison relations. To compare the 2-components arising in different involution centralizers, we
+adapt the correspondence of Gilman–Solomon (GS) [13, p. 56] and the maximality framework of Foote [12].
+Our GS relation uses a containment in place of Gilman–Solomon’s layer equality; Theorem 3.4 explains the
+passage between these forms where it is needed. The formulations below record the witnessing involutions
+explicitly and distinguish the pointed and mirror steps used in our argument.
+Definition 2.1. An occurrence is a pair (a, J) in which a is an involution and J is a 2-component of CG (a).
+Suppose that (a, J) and (b, K) are occurrences, a and b commute, and b ∈ CG (J). A GS correspondence,
+with these witnesses, is the inclusion
+(1)                                            Jb ≤ ⟨K, K a ⟩.
+It is isomorphic if K a = K and Jb O(K) = K. The fixed-layer lemma identifies Jb with L2′ (CJ (b)).
+   A pointed Foote step (a, J) −→F (b, K) requires the same hypotheses, a ̸= b, and the equality
+                                                   L2′ (CG (b)) 
+                                   2′
+(2)                              O (CJ (b)O(CG (b)))                 = ⟨K, K a ⟩.
+
+An occurrence is pointed-maximal if every finite chain of pointed Foote steps starting there preserves the
+isomorphism type of its simple top. The endpoint occurrence of each step must be the starting occurrence
+of the next. A local 2-component is GS-maximal if every forward chain of GS correspondences preserves
+its simple top, with the witnessing involutions allowed to be chosen independently at successive steps.
+   A mirror step J −→M K has commuting involutions z, s, with J a 2-component of CG (z), J s ̸= J, K a
+2-component of CG (s), and a 2-component D of CG (z) ∩ CG (s) satisfying
+                                      D ≤ ⟨J, J s ⟩,    D ≤ ⟨K, K z ⟩.
+Write J ⇝ K for a finite chain of GS correspondences, mirror steps, and conjugations, allowing the empty
+chain. A local 2-component is mirror-maximal if every continuation preserves its simple top.
+8                                                AXIOM MATH
+
+
+   A subgroup of a direct product of groups is diagonal on a set of factors if it projects isomorphically onto
+each of those factors and trivially onto the others. For example, the automorphism exchanging the factors
+of T × T fixes the diagonal {(x, x) : x ∈ T }, which is isomorphic to either factor but is neither. The support
+of a subgroup of a direct product is the set of factors on which it has nontrivial projection.
+   The small simple types remaining in the UGT reduction lead to the following hypotheses. Their rank
+condition will be verified in Section 9.
+Hypothesis 2.2. The group G is nonabelian simple and K-proper. Fix a simple group T isomorphic to
+A7 or to PSL2 (q) for an odd prime power q ≥ 5, and put
+            FT = {A ≤ G : τ (A) ∼ = T and (z, A) is pointed-maximal for some z ∈ Inv(G)}.
+Assume that every member of FT has 2-rank two.
+   For the comparison argument in the remainder of Sections 2–8, we assume Theorem 2.2, with the
+following exceptions. The fixed-layer lemma Theorem 2.4 holds under its own stated hypotheses, and the
+known-group assertion in Theorem 2.7 requires only that H be a K-group. The correspondence lemma
+Theorem 3.1, the rank-increase lemma Theorem 3.3, and the maximality criterion Theorem 3.4 do not
+require the assumption on FT ; we retain the assumption that the ambient G is nonabelian simple and K-
+proper, together with the hypotheses stated in each lemma. In particular, the rank-increase lemma requires
+m2 (J) ≥ 2 for its source component, and the maximality criterion requires the stated local B-property.
+These results are therefore available in Section 9 before the family-rank hypothesis is established.
+   Under the full hypotheses of Theorem 2.2, pointed maximality controls the larger collection of compar-
+isons, including mirror steps.
+Theorem 2.3 (Preservation of simple tops). Assume Theorem 2.2. If A ∈ FT and A ⇝ J, then τ (J) ∼
+                                                                                               = T.
+In particular, every member of FT is mirror-maximal.
+   We first show that every member of FT can be reached from a GS-maximal component of type T . We then
+exclude a GS-maximal component of type T that is interchanged with another component by a commuting
+involution. The latter argument uses a family of subgroups closed under isomorphic correspondences, a
+signalizer construction, and an embedding theorem.
+2.2. Component calculus. The following facts govern passage to odd-core quotients and to centralizers
+of 2-subgroups. We use the component calculus as presented by Gorenstein, Lyons, and Solomon [18, §5],
+together with the coprime-action results in Gorenstein’s Finite Groups [15, Chapter 5]. If R = O(X),
+the quotient map gives a bijection between the 2-components of X and the ordinary components of X/R.
+The inverse image of a component has a unique 2-component, namely its perfect residual. We call this
+subgroup its canonical perfect lift. A subnormal subgroup remains subnormal after intersection with
+another subgroup, and the image of a 2-component under a surjective homomorphism with odd kernel
+is a 2-component.
+   We also use L2′ -balance: if a 2-group U acts on X, then L2′ (CX (U )) ≤ L2′ (X). In its comparison
+form, if a, b are commuting involutions and J is a 2-component of CG (a) with b ∈ CG (J), then there is
+a 2-component K of CG (b) such that Jb ≤ ⟨K, K a ⟩. See [18, Theorem 5.24] and [13, p. 56]. Thus, the
+comparison relation in Theorem 2.1 always has a target for these witnesses.
+   An action of U on R is coprime if |U | and |R| are relatively prime. For such an action, we use R =
+[R, U ]CR (U ) and [R, U, U ] = [R, U ]. If U is a fourgroup and R has odd order, then
+                                           R = ⟨CR (u) : u ∈ U # ⟩.
+We use fixed-point lifting. Namely if a 2-group U acts on X and preserves an odd-order normal subgroup
+R, then
+                                         CX (U )R/R = CX/R (U ).
+This follows from conjugacy of complements to R in R ⋊ U by the Schur–Zassenhaus theorem [15].
+                                                                                                             9
+
+
+   By the odd-order theorem [11], odd-order groups are solvable. Consequently, an odd-order perfect group
+is trivial. These facts also give a useful uniqueness statement: if P ⊴ X is perfect and X/P is solvable, then
+X (∞) = P . If an automorphism α of a perfect group P acts trivially on P/Z(P ), then it is the identity.
+Indeed, the map x 7→ x−1 xα is a homomorphism from P to the abelian group Z(P ) and is therefore trivial.
+Also, if a 2-group U acts on a group X of even order, then CX (U ) has even order: every nontrivial U -orbit
+has even size.
+   We use the three-subgroups lemma in the following form. Write [A, B, C] = [[A, B], C]. If R ⊴ ⟨A, B, C⟩
+and two of [A, B, C], [B, C, A], and [C, A, B] are contained in R, then so is the third. Fixed-point lifting
+supplies the perfect subgroups used in our comparisons: they retain the full quotient by the odd core.
+Lemma 2.4 (Fixed layers). Let M be perfect with M/O(M ) quasisimple, and let a 2-group U normalize
+M and act trivially on M/O(M ). Then we have
+           CM (U )O(M ) = M,     MU /O(MU ) ∼= M/O(M ),     CM (U )/MU has odd order.
+                        ′
+In particular MU = O2 (CM (U )) and it is the unique 2-component of CM (U ). If M is a 2-component of
+CG (a) and u is an involution commuting with a and in CG (M ), then Mu is a 2-component of CG (a)∩CG (u).
+Proof. Put R = O(M ) and C = CM (U ). Fixed-point lifting gives CR = M . Since M/R is perfect,
+MU R = M , and hence
+                             MU /(MU ∩ R) ∼ = M/R,      C = MU (C ∩ R).
+The group M/R has trivial odd core, so O(MU ) = MU ∩ R. The quotient C/MU has odd order; conversely,
+                                              ′                                              ′
+the perfect group MU has trivial image in C/O2 (C) by the odd-order theorem. Thus, MU = O2 (C), and
+the component correspondence gives uniqueness. Finally, intersecting a subnormal chain for M in CG (a)
+with CG (u) makes CM (u), and hence Mu , subnormal in CG (a) ∩ CG (u).                              □
+   We first record the covering-group facts independently of the family-rank hypothesis. If Q is perfect,
+O(Q) = 1, and Q/Z(Q) ∼   = T , where T ∼= A7 or PSL2 (q) for odd q ≥ 5, then Q is either T or its perfect
+double cover. In the latter case its Sylow 2-subgroups have a unique involution, so m2 (Q) = 1; in the
+former case m2 (Q) = 2. The odd central factors in the covers of A6 and A7 are excluded by O(Q) = 1.
+These covering-group and Sylow-subgroup calculations are recorded in [19, Section 6.1]. The next lemma
+uses the family-rank hypothesis to exclude the double-cover possibility.
+Lemma 2.5. If A ∈ FT , then A/O(A) ∼
+                                   = T . The same conclusion holds for every GS-maximal local
+2-component of type T .
+Proof. Quotienting by an odd-order normal subgroup preserves 2-rank: the inverse image of an elemen-
+tary abelian 2-subgroup has a Sylow 2-subgroup mapping isomorphically onto it. Apply the preceding
+covering-group facts to Q = A/O(A). The rank-two hypothesis in Theorem 2.2 excludes the double cover,
+so A/O(A) ∼= T . Every pointed step is a GS correspondence, directly from its defining equality and Theo-
+rem 2.4. Thus, a GS-maximal component of top T is pointed-maximal at every occurrence and belongs to
+FT .                                                                                                   □
+  The involutions and fourgroups of T supply the configurations used in the comparison and signalizer
+arguments.
+Lemma 2.6. The group T has one conjugacy class of involutions, every involution belongs to a fourgroup,
+and every involution centralizer is solvable. Its outer automorphism group is solvable. If V ≤ T is a
+fourgroup, then NT (V ) acts transitively on V # .
+Proof. A dihedral group of order 2n is the group with generators r, s and relations rn = s2 = 1 and
+srs = r−1 ; these groups are solvable. For A7 , the involutions are the double transpositions. They form
+one conjugacy class, and their centralizers are subgroups of the product of a group of order eight and S3 ,
+hence are solvable. For PSL2 (q) with q odd, the matrix description gives one involution class, dihedral
+Sylow 2-subgroups, and dihedral involution centralizers. These Sylow subgroups have order at least four.
+10                                              AXIOM MATH
+
+
+The Sylow 2-subgroups of A7 are also dihedral of order eight, so every involution of either group belongs
+to a fourgroup. Finally, Out(A7 ) has order two. Writing q = pf with p prime, Out(PSL2 (pf )) is a product
+of a cyclic group of order two and a cyclic group of order f .
+   It remains to verify the assertion about V . A fourgroup in A7 has either one orbit of size four and three
+fixed points, or has three orbits of size two and one fixed point. In the first case the alternating group on
+the four points supplies an element inducing a 3-cycle on V # . In the second case an even permutation
+cyclically permuting the three two-point orbits does so.
+   Now let T = PSL2 (q), and write I for the identity matrix. The inverse image of V in the group SL2 (q)
+of determinant-one matrices has generators i, j satisfying i2 = j 2 = −I and ij = −ji. Put k = ij and
+w = (I + i + j + k)/2. The displayed relations give det(w) = 1 and show that conjugation by w cyclically
+permutes the projective images of i, j, k. Thus, the image of w normalizes V and acts transitively on
+V #.                                                                                                        □
+  The inductive hypothesis supplies the following local B-property inside proper subgroups. Its use does
+not require the B-property for G.
+Lemma 2.7 (B-property for known groups). Every K-group H satisfies
+(3)                                  [L2′ (NH (Q)), O(NH (Q))] ≤ O(H)
+for every nontrivial 2-subgroup Q ≤ H. If O(H) = 1, the 2-components of its 2-local subgroups are ordinary.
+Consequently, every proper subgroup of the ambient G satisfies (3), and the proper-subgroup B hypothesis
+in Gilman–Solomon’s Lemma 3.5 is available.
+Proof. Suppose first that O(H) = 1. The known-group fixed-point result [18, Lemma 5.28], with its
+hypotheses supplied by [19, Theorem 7.1.9], says that every 2-component of CH (Q) is quasisimple. Put
+M = NH (Q) and let J be a 2-component of M . Modulo O(M ) its component image centralizes the normal
+2-subgroup QO(M )/O(M ). Hence
+                                          [J, Q] ≤ O(M ) ∩ Q = 1.
+Intersecting a subnormal chain with CH (Q) makes J a 2-component of CH (Q), so the cited result makes
+J quasisimple. It is therefore an ordinary component of M . Ordinary components centralize the odd core
+of M , so the commutator in (3) is trivial in this case.
+   For arbitrary H, quotient by R = O(H). The map
+                                         NH (Q) −→ NH/R (QR/R)
+is onto with odd kernel. Indeed, an element normalizing QR/R can be adjusted by an element of R to
+normalize the Sylow 2-subgroup Q of QR. The image of a 2-component under this odd-kernel map is a
+2-component, and the image of the odd core is contained in the odd core of the image. The case with
+trivial odd core gives (3).
+   Finally every nontrivial 2-local subgroup of a nonabelian simple group is proper, so K-properness supplies
+the hypotheses. The right-hand side in (3) is O(H); we have not asserted the global B-property for the
+unknown group G.                                                                                           □
+
+                                      3. Comparing Components
+   The maximality argument in this section adapts Gilman–Solomon’s rank-increase lemma and maximality
+criterion [13, Lemmas 3.4–3.5]. Our goal is to reach each pointed-maximal component from a GS-maximal
+one. We first relate the GS and pointed Foote correspondences with witnesses fixed, then use mirror steps
+to reverse the comparisons needed for this choice.
+Lemma 3.1. A GS correspondence with distinct witnesses a, b is a pointed Foote step with the same
+witnesses. Conversely, every pointed Foote step is a GS correspondence. A GS correspondence with a = b
+has J = K.
+                                                                                                         11
+
+
+Proof. Put D = Jb , E = L2′ (CG (b)), R = O(CG (b)), and W = ⟨K, K a ⟩. The GS condition is D ≤ W .
+The group D is a 2-component of CG (a) ∩ CG (b), and CJ (b)/D has odd order. Modulo R, its image
+has noncentral projection on a component represented by W . If K a ̸= K, then a fixes D pointwise and
+interchanges the two factors, so both projections are noncentral. Taking normal closures in the layer, and
+then the unique 2-component lifts, gives ⟨DE ⟩ = W. In particular CJ (b) normalizes W . The group R also
+normalizes every 2-component of CG (b), hence normalizes W . The quotient CJ (b)RW/W has odd order,
+since both the image of CJ (b)/D and the normal image of R have odd order. Consequently
+                                                   ′
+                                         F = O2 (CJ (b)R) ≤ W.
+                                            ′
+On the other hand D ≤ F , because D = O2 (D). Thus, ⟨F E ⟩ = W , the required pointed equality.
+  The converse follows from D ≤ F . If a = b, then D = J and K a = K, so J ≤ K; two 2-components of
+the same group cannot be properly nested.                                                        □
+  Equality of the simple quotients permits a return to the source, using a mirror step when two target
+components are interchanged.
+Lemma 3.2. Suppose (a, J) −→F (b, K) and J/O(J) ∼    = K/O(K) ∼
+                                                              = T . Then K ⇝ J. If the correspon-
+dence is isomorphic, its reverse is also isomorphic.
+Proof. Let D = Jb . If K a ̸= K, the common-centralizer component D supplies the reverse mirror step,
+with witnesses (b, a):
+                                  D ≤ ⟨K, K a ⟩,   D ≤ J = ⟨J, J b ⟩.
+If K a = K, then D ≤ K and D ∩ O(K) ≤ O(D). Since D/O(D) ∼            = T ∼
+                                                                          = K/O(K), comparison of
+orders gives DO(K) = K and D ∩ O(K) = O(D). Thus, a acts trivially on K/O(K). Intersecting a
+subnormal chain for D in the common centralizer with CK (a) shows that D is its unique 2-component.
+Therefore Ka = D ≤ J, which is the reverse GS correspondence. Moreover DO(J) = J, so this reverse
+correspondence is isomorphic.                                                                      □
+3.1. Increasing the centralizer rank. The maximal choices below rely on an increase in quotient order
+or centralizer rank. Starting from a nonisomorphic correspondence, we can obtain such an increase while
+keeping the source witness a fixed, although the second witness may change. This adapts [13, Lemma 3.4,
+pp. 68–69], using only ⟨a, b⟩ ≤ S.
+Lemma 3.3 (Rank increase). Let J be a 2-component of CG (a) with m2 (J) ≥ 2. Let
+                     S ∈ Syl2 (CG (a) ∩ NG (J)),       P = S ∩ CG (J),      b ∈ Inv(P ).
+If a correspondence from (a, J) at b is not isomorphic, there are e ∈ Inv(P ) and a correspondent K at
+(a, e) with CS (b) ≤ CS (e) such that either
+                                          |K/O(K)| > |J/O(J)|,
+or
+                 |K/O(K)| = |J/O(J)|,           m2 (CG (e) ∩ CG (K)) > m2 (CG (a) ∩ CG (J)).
+Proof. Choose e ∈ Inv(P ) admitting a nonisomorphic correspondent and such that Q = CS (e) contains
+CS (b) and is maximal among these centralizers. Write K for a nonisomorphic correspondent at e. The
+correspondence gives |K/O(K)| ≥ |J/O(J)|; see [12, Lemma 2.1(iv)]. If the inequality is strict, we are
+done. Suppose equality holds, and put T0 = J/O(J). Then K a ̸= K: otherwise Je ≤ K and order
+comparison makes the correspondence isomorphic.
+  Set M = CG (e) and use bars for images modulo O(M ). The two components give
+                                   ⟨K, K a ⟩ = K̄ × K̄ a , K̄ ∼
+                                                              = T0 .
+These assertions and the diagonal description of J¯e follow from the equal-order case of the correspondence
+calculation [13, Lemma 3.4, proof]. To see why the product is direct, a nontrivial common center would
+contain an involution fixed by a and hence in the kernel of the diagonal map. This would make Je /O(Je ) a
+12                                                AXIOM MATH
+
+
+proper central quotient of K/O(K), contrary to equality of orders. Put P0 = P ∩ Q = CP (e). This group
+centralizes Je /O(Je ), and therefore its permutation action on the two factors has kernel
+                                    R = CP0 (K̄ × K̄ a ),      P0 = ⟨a⟩ × R.
+Here a is central in S, and the assertion about the kernel follows because an automorphism fixing both
+factors and the diagonal pointwise fixes both factors pointwise. The opposite factor K̄ a and R̄ centralize
+K̄ and intersect trivially: a centralizes R̄ and interchanges the two direct factors. Lifting 2-subgroups
+through the odd kernel gives
+                                m2 (CG (e) ∩ CG (K)) ≥ 2 + m2 (R) > m2 (P0 ).
+Thus, it suffices to show m2 (P0 ) = m2 (P ).
+  Suppose otherwise. Since P ⊴ S, the product P Q is a 2-group, and P0 < P implies Q < P Q. Every
+proper subgroup of a finite 2-group is properly contained in its normalizer. Applying this fact gives
+                                   NP Q (Q) > Q,        NP Q (Q) = NP (Q)Q.
+Consequently NP (Q) > P0 , and P0 ⊴ NP (Q). Choose w ∈ NP (Q) \ P0 whose image in NP (Q)/P0 is an
+involution. Then w ∈  / Q and w2 ∈ P0 .
+   We have |P0 | ≥ 4, since a, e are distinct commuting involutions. If |P0 | = 4, use the elementary fact
+from [13, Lemma 3.4]: a finite 2-group with an involution whose centralizer has order four has 2-rank at
+most two. This contradicts m2 (P0 ) < m2 (P ). Thus, |P0 | ≥ 8. Both R and Rw have index two in P0 , so
+their intersection is nontrivial. Also R ⊴ Q: the group Q normalizes Je , hence its normal closure ⟨K, K a ⟩
+in L2′ (M ), and therefore the kernel of its action on the quotient in P0 . Since w2 ∈ P0 , we also have
+R ∩ Rw ⊴ ⟨Q, w⟩. Choose an involution
+                                          z ∈ (R ∩ Rw ) ∩ Z(⟨Q, w⟩).
+Then CS (z) properly contains Q. By maximality of Q, every correspondence from (a, J) at z is isomorphic;
+let V be its single target.
+   Put J0 = J⟨e,z⟩ . Since z acts trivially on both factors modulo their odd cores, fixed-point lifting shows
+that C⟨K,K a ⟩ (z)(∞) still has quotient T0 × T0 . It is the product of Kz and (K a )z , 2-components of CG (e) ∩
+CG (z) by Theorem 2.4. The group J0 projects diagonally onto both factors, so its normal closure in that
+fixed layer is the whole fixed layer. By L2′ -balance this fixed layer lies in L2′ (CG (z)). But J0 ≤ Jz , and
+the normal closure of Jz in L2′ (CG (z)) is the single component V . This would place an odd-by-(T0 × T0 )
+group inside V , although V /O(V ) ∼   = T0 , an impossibility. Hence m2 (P0 ) = m2 (P ). Finally P is a Sylow
+2-subgroup of CG (a) ∩ CG (J), giving the stated strict rank increase.                                         □
+3.2. Choosing a GS-maximal component. To obtain GS-maximality, it suffices to check correspon-
+dences at involutions in a chosen Sylow subgroup and a Sylow condition at their targets. The rank increase
+will make this criterion applicable.
+Lemma 3.4 (A criterion for GS-maximality). Assume the proper-subgroup B-property of Theorem 2.7. Let
+a be an involution, let J be a 2-component of CG (a), let S ∈ Syl2 (CG (a) ∩ NG (J)), and put P = S ∩ CG (J).
+Suppose every correspondence from (a, J) at an involution b ∈ P is isomorphic. Suppose also that, for
+b ∈ Inv(CP (S)) and its target K,
+                                        S ∈ Syl2 (CG (b) ∩ NG (K)).
+Then every edge of every forward chain of GS correspondences beginning at J is isomorphic. In particular
+J is GS-maximal.
+Proof. The proof of [13, Lemma 3.5, pp. 69–70] gives the assertion for their stronger correspondence
+                                             Jb = L2′ (C⟨K,K a ⟩ (a)).
+Our assumptions imply theirs, including the proper-subgroup B-property used in their Lemma 3.3.
+  Suppose X is reached from J by such isomorphic correspondences, and consider one of our correspon-
+dences from (c, X) to (d, M ). Balance supplies a stronger correspondence to (d, N ), which is isomorphic
+                                                                                                          13
+
+
+by the cited result. Thus, Xd O(N ) = N = N c , whereas Xd ≤ ⟨M, M c ⟩. Modulo O(CG (d)), the image of
+Xd is the component represented by N . Since it lies in the product of the components represented by M
+and M c , we have N = M or N = M c . The equality N c = N forces M = N in either case. Induction on
+the chain length now proves the assertion for our relation.                                          □
+   Maximizing centralizer rank and then Sylow order supplies a GS-maximal predecessor for each member
+of FT .
+Lemma 3.5 (GS-maximal predecessors). For each A ∈ FT , there is a GS-maximal 2-component Y of type
+T with Y ⇝ A.
+Proof. Choose a pointed-maximal occurrence (z, A). Let R be its finite closure under pointed Foote steps
+and simultaneous conjugations of both entries. Each pair in R remains pointed-maximal of type T , hence
+has its component in FT . The rank hypothesis and Theorem 2.5 give J/O(J) ∼    = T for every (a, J) ∈ R.
+Theorem 3.2, together with inverse conjugations, gives J ⇝ A for all these pairs.
+  Choose (a, Y ) ∈ R maximizing lexicographically
+                     ρ(a, Y ) = m2 (CG (a) ∩ CG (Y )),   ν(a, Y ) = |CG (a) ∩ NG (Y )|2 .
+Let S ∈ Syl2 (CG (a) ∩ NG (Y )) and P = S ∩ CG (Y ). Any GS target with this fixed source occurrence
+either has the same source and target or belongs to R by Theorem 3.1. Theorem 3.3 and maximality of ρ
+therefore make every correspondence at b ∈ Inv(P ) isomorphic.
+   If b ∈ Inv(CP (S)), then b ∈ Z(S). The group S normalizes Yb and its unique containing component K,
+so S ≤ CG (b)∩NG (K). Also P acts trivially on Yb /O(Yb ), which covers K/O(K). Hence ρ(b, K) ≥ ρ(a, Y ).
+The pair (b, K) belongs to R, unless it is the original pair. The first maximum forces equality of ranks,
+and the second forces S ∈ Syl2 (CG (b) ∩ NG (K)). Theorem 3.4 proves the result.                       □
+3.3. A family closed under isomorphic correspondences. Suppose a commuting involution inter-
+changes two components, one of which is GS-maximal. For the contradiction argument, we need a
+conjugacy-invariant family containing this pair and closed under isomorphic correspondences.
+Proposition 3.6. Suppose some GS-maximal 2-component of type T has a distinct conjugate under an
+involution commuting with its witnessing involution. Then there is a conjugacy-invariant family S of
+actual local 2-components such that
+   (1) J/O(J) ∼  = T for every J ∈ S ;
+   (2) every forward GS correspondence from every occurrence of a member of S is isomorphic, with
+        target in S ;
+   (3) some Y, Y s ∈ S are distinct 2-components of CG (z), where s, z are commuting involutions.
+Proof. For this proof, call (a, J, u) an interchanged triple when J is GS-maximal of type T , J is a 2-
+component of CG (a), and u is an involution commuting with a with J u ̸= J. Every forward GS target
+of such a J is again GS-maximal of type T . Moreover, GS maximality implies pointed maximality at
+every occurrence by Theorem 3.1. Thus, these components lie in FT , and the family rank hypothesis gives
+J/O(J) ∼  = T.
+   Maximize ρ(a, J) over all interchanged triples, and call the maximum ρ0 . Choose a maximizing triple
+(z, Y, s). If any occurrence (a, J) of a GS-maximal component of type T has ρ(a, J) ≥ ρ0 , then every
+correspondence from it is isomorphic. Indeed, for a nonisomorphic correspondence choose the Sylow group
+in Theorem 3.3 to contain its two witnesses. That lemma gives a target K at e with K a ̸= K and
+ρ(e, K) > ρ0 . The triple (e, K, a) is an interchanged triple, contrary to the definition of ρ0 .
+   Isomorphic correspondences reverse by Theorem 3.2. Let I(Y ) be the set of local 2-components joined
+to Y by a finite chain of isomorphic GS correspondences, where the witnessing involutions may change
+between edges. Reversibility makes this an equivalence class; every member is GS-maximal of type T .
+Optimize (ρ(a, J), ν(a, J)) over all J ∈ I(Y ) and all involutions a for which J is a 2-component of CG (a).
+Its first coordinate is at least ρ0 . The preceding paragraph gives the isomorphic correspondences needed
+14                                               AXIOM MATH
+
+
+for Theorem 3.4; exactly the Sylow-order argument in Theorem 3.5 supplies the remaining hypothesis.
+Thus, every edge in every forward GS chain from this optimized J is isomorphic.
+   There is an isomorphic path from J back to Y . Appending any forward chain from Y shows that all of
+its edges are isomorphic. Define
+             S = {K g : g ∈ G,     Y = J0 −→GS J1 −→GS · · · −→GS Jn = K for some n ≥ 0}.
+The witnesses in this definition are chosen separately for each edge. Conjugation preserves the correspon-
+dence relation, so the same isomorphic-transport assertion holds from every occurrence of every member.
+Both Y and Y s belong to S , and their original interchanged triple supplies the last assertion.        □
+
+                                          4. Marked Subgroups
+  To carry the comparison information into proper subgroups, we enlarge our family to include perfect
+subgroups detected by its components. These will be called marked subgroups. This construction organizes
+the component comparisons needed for the application of Solomon’s method [26]; the defining marking
+condition keeps its connection to the chosen family explicit.
+  Fix the conjugacy-invariant family S supplied by Theorem 3.6. Its members have quotient T modulo
+their odd cores, and every forward GS correspondence from every occurrence of a member is isomorphic and
+has its target in S . Recall that MU = CM (U )(∞) for U ≤ CG (M ). By Theorem 2.4, this subgroup covers
+M/O(M ). The construction uses the following control on normal closures: under the stated hypotheses,
+the image of W is a single component.
+Lemma 4.1. Let π : A → A/O(A), and let P ≤ W ≤ A be perfect. Suppose π(P ) = X is an ordinary
+component of A/O(A) and
+                       W = ⟨P W ⟩R for some odd-order normal subgroup R ⊴ W.
+Then π(W ) = X. If X ∼   = T , then W = P O(W ) and W/O(W ) ∼  = T . Furthermore, a perfect odd-by-T
+subgroup containing a simple component X ∼
+                                         = T of its ambient group equals X.
+Proof. Set V = π(W ) and N = ⟨X V ⟩. The quotient V /N is perfect and odd, hence trivial by the odd-
+order theorem. Each conjugate of X is an ambient component, so V = N ≤ E(A/O(A)). Components are
+normal in the layer; consequently V normalizes X and V = X. When X is simple, W ∩ O(A) = O(W ),
+which proves the assertions about W .
+  For the last assertion, write W for the perfect odd-by-T subgroup. The simple subgroup X injects into
+and covers W/O(W ), so W = XO(W ). Its normal closure N = ⟨X W ⟩ satisfies W = N O(W ); perfectness
+and the odd-order theorem give W = N . Again N lies in the ambient layer, in which X is normal. Thus,
+W = X.                                                                                               □
+  A marking records agreement with a member of S in an involution centralizer after its odd core has
+been removed.
+Definition 4.2. A perfect subgroup M ≤ G is marked if M/O(M ) ∼    = T and there are an involution
+a ∈ CG (M ) and a member Sa ∈ S such that Sa is a 2-component of CG (a) and
+(4)                                     Ma O(CG (a)) = Sa O(CG (a)).
+Write F for this conjugacy-invariant family. The involution a is a marking witness. Every member of S
+is marked, using any witnessing involution at which it occurs as a local component.
+   The choice of a marking witness is flexible: every involution in the action kernel can serve, and nontrivial
+2-subgroups of that kernel also give a single containing component.
+Lemma 4.3 (Transport of markings). Let M ∈ F . Every involution of CG (M ) is a marking witness. For
+every nontrivial 2-subgroup U ≤ CG (M ) there is a single marked 2-component SU of CG (U ) such that
+                                  D                 E
+                                       L ′ (C (U ))
+(5)                                 MU 2 G            = SU = O(SU )MU .
+                                                                                                           15
+
+
+Proof. Suppose first that a witnesses the marking, and put R = O(CG (a)). Since Sa ⊴Sa R and the quotient
+by Sa is odd, perfectness in (4) gives
+                                       Ma ≤ Sa ,      Sa = O(Sa )Ma .
+Let v ∈ CG (M ) be an involution commuting with a. It normalizes Ma R, hence its unique 2-component
+Sa , and acts trivially on Sa /O(Sa ) because Ma covers that quotient. If v ̸= a, Theorem 3.6 supplies a
+single isomorphic correspondent Sv ∈ S at v. The group M⟨a,v⟩ lies in (Sa )v ≤ Sv and still maps onto
+T . Its image in CG (v)/O(CG (v)) is therefore the simple component represented by Sv . The image of Mv
+is perfect odd-by-T and contains that component. Theorem 4.1 makes its image exactly that component,
+proving (4) at v. The case v = a needs no correspondence.
+   For an arbitrary involution u ∈ CG (M ), choose a Sylow 2-subgroup of CG (M ) containing u, and conjugate
+a into it by an element of CG (M ). This preserves M and its marking. A central involution of that Sylow
+subgroup connects the conjugated witness to u by two commuting steps. Hence every such u is a witness.
+   Now take 1 ̸= U ≤ CG (M ) and u ∈ Ω1 (Z(U ))# . In A = CG (u), put Ā = A/O(A). The image of Mu is
+a simple component K ∼   = T of Ā, and Ū centralizes K. Intersecting a subnormal chain shows that K is a
+component of CĀ (Ū ). Odd-kernel fixed-point lifting gives an epimorphism
+                                        CG (U ) = CA (U ) −→ CĀ (Ū )
+with odd kernel. Its canonical 2-component lift SU contains MU and satisfies SU = O(SU )MU . Indeed,
+MU maps onto K, and every perfect subgroup of the full inverse image lies in its perfect residual. Since u
+centralizes SU and its image in Ā is K, the original witness u marks SU as well.
+  Finally SU ⊴ L2′ (CG (U )). The normal closure of MU in that layer lies in SU and covers SU /O(SU ). Its
+quotient in SU is both odd and perfect, and hence trivial. This proves (5).                             □
+   The restriction U ̸= 1 is essential to the use made of this lemma. No assertion that a marked subgroup
+lies in a global component of G has been obtained.
+4.1. Comparisons in proper subgroups. The local B-property gives stronger control inside proper
+subgroups: components with marked lifts have only identity correspondences in their odd core quotient.
+   Fix H < G, write π : H → H̄ = H/O(H), and use bars for images. A relative GS correspondence means
+a correspondence from Theorem 2.1 with ambient group H̄. The local B-property from Theorem 2.7 applies
+in the K-group H̄, which has trivial odd core. Its local 2-components are therefore ordinary quasisimple
+components. Their centers may have odd order; in particular, quasisimple central extensions of A6 and A7
+by a cyclic group of order three must be allowed.
+   The marking of the canonical lift is the hypothesis that forces this equality of subgroups.
+Lemma 4.4 (Relative identity). Let A be an ordinary component of CH̄ (ā), and suppose its canonical
+perfect lift
+                                                      (∞)
+                                          P = π −1 (A)
+is marked. Every relative GS correspondence A −→ K in H̄ is the identity subgroup correspondence:
+(6)                                            K = K ā = A.
+This holds at every occurrence of A, including after changing its witnessing involution.
+Proof. Let commuting involutions ā, b̄ witness the correspondence. An automorphism of a perfect group
+acting trivially modulo its center is trivial. Thus, b̄ centralizes A, and the correspondence gives A ≤ W̄ =
+KK ā . Lift ⟨ā, b̄⟩ across the odd kernel to commuting involutions a, b ∈ H. Then b ∈ CG (P ). Let W be the
+perfect residual of the inverse image of W̄ in CH (b). Fixed-point lifting gives Pb ≤ W and π(Pb ) = A.
+   The normal closure of A in W̄ is W̄ . In the one-component case this follows from quasisimplicity. In
+the two-factor case ā exchanges the factors and fixes A pointwise, so A has nontrivial projection modulo
+the center on both. Its normal closure covers both simple factors and therefore the perfect central product
+itself. It follows that
+                                              W = ⟨PbW ⟩ (W ∩ O(H)).
+16                                              AXIOM MATH
+
+
+By (5), the image of Pb in CG (b)/O(CG (b)) is a simple component. Apply Theorem 4.1 in CG (b) to obtain
+W = Pb O(W ). Projecting into H̄ gives W̄ = Aπ(O(W )). The normal odd subgroup π(O(W )) of the
+semisimple group W̄ is central. Since W̄ is perfect, W̄ = A, proving (6). The proof depends only on the
+canonical lift of the subgroup A, and hence applies to any choice of its witnessing involution.       □
+     Marked subgroups of H give the relative components to which this identity property applies.
+Lemma 4.5. Let M ∈ F , with M ≤ H < G, and let a ∈ H ∩ CG (M ) be an involution. There is an
+ordinary component A = π(Ma ) of CH̄ (ā) whose canonical perfect lift is marked. Moreover A/Z(A) ∼
+                                                                                                  =T
+and Z(A) has odd order.
+Proof. Choose the marking Sa from Theorem 4.3, and set
+                                                                 J = I (∞) .
+                                                          
+                                 I = CH (a) ∩ Sa O(CG (a)) ,
+The product Sa O(CG (a)) is subnormal in CG (a) because its image modulo O(CG (a)) is a component.
+Intersecting its subnormal chain with CH (a) shows that I is subnormal there. Its image in CG (a)/O(CG (a))
+is T , since Ma ≤ I covers that component. Consequently J is a 2-component of CH (a), contains Ma , and
+is perfect odd-by-T .
+   The odd-kernel epimorphism CH (a) → CH̄ (ā) sends J to a relative 2-component A. Local B in H̄ makes
+A quasisimple; its odd core is its odd center and its simple quotient is T . Since J = Ma O(J), one has
+A = π(Ma )Z(A); perfectness therefore gives A = π(Ma ). The canonical lift P = (π −1 (A))(∞) contains J
+and is perfect odd-by-T . Since a centralizes J, the group Pa contains J. Its image in CG (a)/O(CG (a)) is
+perfect odd-by-T and contains the simple component represented by J. The last clause of Theorem 4.1
+makes that image exactly this component. Thus, a marks P , as required.                                  □
+
+                        5. Containment in Components of Proper Subgroups
+   Aschbacher’s component theorem [1, Theorem 9.7] and the recognition theorem of Aschbacher–Seitz
+[6, Theorem, p. 440] provide the main inputs here. Together with relative identity, they place a relative
+component with a sufficiently large centralizer in the layer of the whole proper quotient. A subgroup Q of
+a group B is tightly embedded if |Q| is even and |Q ∩ Qg | is odd whenever Qg ̸= Q. A quasisimple subgroup
+A ≤ B is standard if CB (A) is tightly embedded, NB (A) = NB (CB (A)), and [A, Ag ] ̸= 1 for every g ∈ B.
+Lemma 5.1 (The rank-three criterion). In Theorem 4.4, if m2 (CH̄ (A)) ≥ 3, then A is an ordinary
+component of H̄. In fact A ∼
+                           = T.
+Proof. Write B = H̄. First, A is a component of CB (v) for every involution v ∈ CB (A). For v commuting
+with the current witnessing involution, L2′ -balance supplies a GS correspondence; (6) makes its target A.
+For arbitrary v, conjugate the witnessing involution within CB (A) into a Sylow 2-subgroup containing v,
+and use a central involution of that Sylow subgroup to connect the witnesses. These conjugations fix A,
+and its canonical lift remains marked.
+   We now verify Aschbacher’s original maximality [1, §1, p. 88]. His set L consists of ordinary local
+components, and A <∗ K means that, for an involution t, A is a component of CB (t), A ≤ K, and
+K = [K, t]. If such a successor K existed, choose an involution b witnessing K as a local component. Then
+b centralizes A, so the preceding paragraph makes A another component of CB (b). Nested components
+are equal; it follows that A = K, contradicting the fact that K = [K, t] and [A, t] = 1. Hence A has the
+maximality required in Aschbacher’s theorem.
+   Choose a fourgroup U ≤ CB (A). Each nonidentity element of U has A as a component in its centralizer.
+Choosing a witnessing involution in U # gives exactly Hypothesis 9.4(2) of [1]. In the notation of that
+paper, O2′ ,E (X) is the inverse image of E(X/O(X)) in X. Hypothesis 9.1 there, namely O2′ ,E (CB (t)) =
+O(CB (t))E(CB (t)) for every involution t, follows from local B in B: every 2-component of an involution
+centralizer is ordinary. Theorem 9.7 of that paper now applies. Its rank-one alternative is excluded because
+an odd central cover of T has 2-rank two. Its alternative in which the Sylow 2-subgroups of CB (A) are
+dihedral is also excluded, since a dihedral 2-group has 2-rank at most two. Apart from the global component
+                                                                                                           17
+
+
+conclusion, Theorem 9.7 gives its first alternative, including the absence of commuting conjugates of A.
+We explain explicitly why this makes A standard here. If an involution v centralizes both A and Ag , the
+identity-correspondence argument above makes both components of CB (v). They are equal or commute,
+so they are equal. Thus, a conjugate of CB (A) meeting it in even order has Ag = A. In particular
+NB (CB (A)) = NB (A), and CB (A) is tightly embedded. These properties show that A is standard.
+   Suppose now that A is standard but not normal in B, and put X = ⟨AB ⟩. We apply the theorem of
+Aschbacher–Seitz [6, Theorem, p. 440], which classifies standard subgroups of known simple type in a group
+with trivial odd core when their centralizer has 2-rank at least two. Here O(B) = 1 because B = H/O(H);
+the preceding argument establishes that A is standard; and A/Z(A) ∼   = T is a known simple group. Finally,
+our hypothesis m2 (CB (A)) ≥ 3 supplies the required centralizer rank. Thus, this application falls within
+the scope of that theorem. For these tops, its nonnormal alternatives give the following possible pairs of
+isomorphism types of A and X:
+                                    (An , An+4 ),   (A5 , M12 ),   (A5 , J2 ),
+where n ∈ {5, 6, 7}, M12 is the degree-twelve Mathieu group, and J2 is the second Janko group. In
+particular, X is simple. If CB (X) contained an involution, it would centralize A and every B-conjugate of
+A. Tight embedding and NB (CB (A)) = NB (A) would then make A normal in B. Thus, CB (X) has odd
+order; it is normal in B, so is trivial. Consequently X ≤ B ≤ Aut(X).
+   Choose Q ∈ Syl2 (CB (A)) and a ∈ Inv(Z(Q)), and extend Q to S ∈ Syl2 (CB (a)). Then CS (A) = Q, and
+the first paragraph makes A a component of CB (a). The centralizer calculation [13, Proposition 2.1(1)]
+now gives m2 (Q) ≤ 2, a contradiction. Thus, A is normal in B in the standard case as well, and is a
+global component in every case. Finally its center is odd, and the product of the centers of its conjugate
+components is an odd normal subgroup of B. Since O(B) = 1, this center is trivial and A ∼   = T.        □
+  Other marked components can supply the required centralizer rank. With only two components, an
+additional involution in their common action kernel is needed; we record both cases in one definition.
+Definition 5.2. For N ≤ G, let
+                    Y
+            D(N ) =   {K : K is a marked 2-component of N },                 N0 = O2′ ,2 (N )L2′ (N ).
+Let r(N ) be the number of marked 2-components of N , including r(N ) = 0 if there are none. The
+empty product in the definition of D(N ) is 1. We call N F -balanced if r(N ) ≥ 2 and either r(N ) ≥ 3
+or CN0 (D(N )) has even order. Here CN0 (D(N )) is the kernel of the action on D(N )/O(D(N )). This
+condition concerns the marked family; it is different from the negation of the unbalanced-group condition
+in the overview.
+   A marked 2-component of a subgroup H has a simple image isomorphic to T in H/O(H): its image is
+quasisimple, and its odd center generates an odd normal subgroup there under conjugation, so that center
+is trivial. Its canonical perfect lift is the original 2-component. The usefulness of F -balancedness is its
+persistence under enlargement, with distinct marked components remaining distinct.
+Lemma 5.3. If N is F -balanced and N0 ≤ H < G, then each marked component of N lies in a marked
+component of H. Distinct marked components of N lie in distinct marked components of H, and H is
+F -balanced.
+Proof. Write D(N ) = K1 · · · Kr . Each Ki has an elementary abelian 2-group E of rank at least three in the
+kernel of its action on the quotient inside N0 . If r ≥ 3, two opposite factors give rank four modulo the odd
+core, and odd-kernel lifting supplies E. If r = 2, an opposite fourgroup and an involution in the common
+kernel give rank three. The common-kernel involution is independent of the opposite factor because the
+latter has centerless simple quotient. The same odd-kernel lifting gives the required elementary abelian
+subgroup.
+   Choose a ∈ E # and form the relative component A associated with (Ki )a by Theorem 4.5. The image
+of E centralizes A: its action is trivial modulo the center of the perfect group A, hence trivial. The image
+18                                               AXIOM MATH
+
+
+of E retains rank at least three across O(H). Theorem 5.1 makes A ∼   = T a global component of H̄. The
+image of Ki contains A and is perfect odd-by-T , so Theorem 4.1 makes that image A. Thus, Ki lies in the
+canonical marked component lift of A in H.
+   Distinct old factors have commutator of odd order. If their images became the same simple factor, that
+commutator would map onto T , which is impossible. There are therefore at least r marked factors in H.
+Only the two-factor F -balancedness condition needs checking. An old common-kernel involution survives
+in H̄ and centralizes both new simple factors. If their common centralizer in O2 (H̄)E(H̄) had odd order,
+then O2 (H̄) = 1 and there could be no additional component. Consequently F ∗ (H̄) would be exactly those
+two centerless simple factors. The surviving involution would centralize F ∗ (H̄), contradicting its self-
+centralizing property. This gives an even common kernel in the preimage H0 , and H is F -balanced.      □
+   Within an F -balanced proper subgroup, a marked subgroup can be placed in a component whenever
+its action kernel there contains an involution.
+Lemma 5.4. Let H < G be F -balanced, let M ∈ F satisfy M ≤ H, and suppose H ∩ CG (M ) contains an
+involution. Then M lies in a single marked 2-component of H.
+Proof. Choose such an involution a, and let A be the relative ordinary component supplied by Theorem 4.5.
+Work in B = H/O(H). By L2′ -balance, A ≤ E(B). Modulo Z(E(B)), the layer is a direct product of
+simple groups. We take the support of A in this quotient. Since A is a component of CB (ā), its support
+lies in one component of E(B) or in a pair of components interchanged by ā. In the latter case its image
+modulo the center is diagonal on that pair. The canonical lift of A is marked, so (6) applies.
+    Suppose a marked global component of B lies outside this support. The witnessing involution permutes
+the marked components and preserves the support. An outside orbit has length one or two and supplies
+an involution b fixed by ā. For a two-factor orbit use the diagonal fixed group. For a fixed factor, the
+parity of the orbit sizes gives an even-order fixed subgroup. This b centralizes the entire support of A. A
+support component is therefore a component of CB (b) and is the target of a relative GS correspondence
+from A. Equation (6) forces A to be that global component. If b = ā, the same conclusion follows directly
+by nesting the two components of CB (ā).
+    If there is no outside marked factor, F -balancedness leaves exactly two marked global factors, forming
+the exchanged support of A. The common kernel in O2 (B)E(B) has even order and is normalized by ā. Its
+fixed subgroup has even order, so it contains an involution b centralizing both factors and commuting with
+ā. It is distinct from ā, which exchanges the factors. Again a relative correspondence from A to a support
+factor contradicts (6). Thus, in every case A is a global component. Its center is odd and O(B) = 1,
+so A ∼  = T . The image of M is perfect odd-by-T and contains A through the image of Ma . Theorem 4.1
+makes that image exactly A. Perfectness puts M in the canonical perfect lift of A, which is marked by
+construction. This proves the assertion.                                                                  □
+     Both lemmas apply to proper subgroups. Their use of (3) follows from the K-properness of G.
+
+                                      6. An Embedding Criterion
+   We now show that a proper F -balanced subgroup M = NG (D(M )) cannot contain the centralizers in G
+of all involutions belonging to the individual components of D(M ). The proof uses an embedding criterion
+of Aschbacher, which we recall before establishing the lemma.
+   For an element or a subgroup U , abbreviate CG (U ) to CU and L2′ (CU ) to LU . A pure involution of
+a product of 2-components means an involution belonging to one of its individual 2-components. We use
+the following embedding criterion, proved by Aschbacher and stated as [26, Theorem 2.8, p. 572]. Suppose
+D ⊴ M ≤ G is a product A1 · · · Ar of 2-components of M , and put Āi = Ai O(D)/O(D). Assume that
+     (i) if t, tg ∈ M \ Z(G) are 2-elements, t acts trivially on Ā1 , and tg acts trivially on some Āj , then
+         g ∈ M;
+    (ii) if X ≤ M g and A1 ≤ O(D)X, then g ∈ M .
+                                                                                                             19
+
+
+Then M = G, or r = 1, or r = 2 and m2 (A1 ) = m2 (A2 ) = 1. We will verify the stronger symmetric
+versions of the two hypotheses, with any component in place of A1 . Since G is nonabelian simple, every
+nonidentity 2-element of G is noncentral.
+   The number and 2-rank of our marked components exclude the exceptional conclusions. Containment
+of all pure-involution centralizers will supply the hypotheses of the criterion.
+Lemma 6.1 (Embedding criterion). Let M < G be F -balanced, put D = D(M ) = L1 · · · Lr , and suppose
+M = NG (D). If we have
+(7)                                              CG (x) ≤ M
+for every x ∈ Inv(Li ) and every 1 ≤ i ≤ r, then a contradiction follows.
+Proof. Here r ≥ 2, each Li /O(Li ) ∼ = T , and m2 (Li ) = 2. We give the component-control argument of
+[26, Lemma 3.13, pp. 590–591], retaining the extra details needed for the marked family.
+   Let 1 ̸= t ∈ CM (Li ) be a 2-element. The fixed-point subgroup (Li )⟨t⟩ has quotient T , so it contains a
+fourgroup B. Coprime generation in the odd group O(Ct ) and (7) give
+                                     O(Ct ) = ⟨CO(Ct ) (b) : b ∈ B # ⟩ ≤ M.
+We also have NG (B) ≤ M . To see this, put H = (Li )⟨t⟩ and write bars for images in H/O(H) ∼   = T . Since
+O(H) has odd order, the map B → B̄ is an isomorphism. By Theorem 2.6, there is an element of NT (B̄)
+inducing a 3-cycle on B̄ # . Choose a lift h ∈ H. Then B and B h are complements to O(H) in O(H)B. By
+the conjugacy part of the Schur–Zassenhaus theorem, we may multiply h by an element of O(H) to obtain
+c ∈ NH (B) inducing this 3-cycle on B # .
+   Now let g ∈ NG (B). A permutation of the three elements of B # either fixes a point or is a 3-cycle.
+Thus, for some k ∈ {0, 1, 2}, the element gck fixes an element b ∈ B # . Since b ∈ Li , hypothesis (7) gives
+gck ∈ CG (b) ≤ M . Also c ∈ H ≤ M , so g ∈ M , as required.
+   By Theorem 4.3, the group (Li )⟨t⟩ covers the quotient by the odd core of a unique component of Lt . The
+other components of Lt centralize that quotient. Conjugacy of Sylow 2-subgroups across the odd kernel
+gives
+                                    O(Ct )Lt = O(Ct )(Li )⟨t⟩ NO(Ct )Lt (B).
+Consequently, we have
+(8)                                             O(Ct )Lt ≤ M
+for every nonidentity 2-element t ∈ CM (Li ).
+   We next prove the second condition of the embedding criterion. Suppose X ≤ M g and Lj ≤ O(D)X.
+Replace X by (X ∩ O(D)Lj )(∞) . It is perfect odd-by-T , still covers Lj /O(Lj ), and remains in M g . Every
+involution of this new X is O(D)-conjugate to an involution of Lj . Hence CG (x) ≤ M for x ∈ Inv(X). A
+fourgroup in X, acting on the odd normal subgroup O(M g ), gives
+(9)                                             O(M g ) ≤ M.
+
+Case 1. X ≤ Dg . The image of X in Dg /O(Dg ) ∼      = T r is diagonal on a nonempty set of factors. To see
+this, every nontrivial projection is perfect odd-by-T and has order at most |T |, so it is all of T ; the odd
+core has trivial image in every such projection.
+   If the support is all factors, the images of CDg (x), x ∈ Inv(X), generate T r . In fact, for a prescribed
+coordinate involution there is a diagonal involution with that coordinate, and the coordinate involution
+centralizes it. Fixed-point lifting across O(Dg ) realizes these elements in the displayed centralizers. Each
+copy of T is generated by its involutions, and (9) absorbs the odd core. Thus, Dg ≤ M . Theorem 5.4,
+using kernel involutions from opposite factors, puts every factor of Dg in a marked factor of M . Hence
+Dg ≤ D, so equality of orders gives Dg = D and g ∈ NG (D) = M .
+   If a factor K0 of Dg is unused, X acts trivially on K0 /O(K0 ). Apply (8) in M g to x ∈ Inv(X). This
+gives Lx ≤ M g . The subgroups defined by taking fixed points and perfect residuals of the factors Li , i ̸= j,
+20                                               AXIOM MATH
+
+
+lie in Lx and cover their quotients, while X covers the jth quotient. Therefore D ≤ ⟨O(D), M g ⟩. Choose
+a fourgroup U ≤ X and a fourgroup E ≤ CK0 (U ); the latter exists by odd-kernel fixed-point lifting. Then
+E ≤ M , since it centralizes U , whereas CG (e) ≤ M g for every e ∈ E # by (7) in M g . Coprime generation
+gives O(D) ≤ M g . Thus, D ≤ M g , and Theorem 5.4 in M g gives D ≤ Dg . Again g ∈ M .
+Case 2. X permutes the factors of Dg nontrivially. There is a fourgroup U ≤ X acting nontrivially on the
+factors: the image of X is generated by images of involutions, and each involution extends to a fourgroup.
+Some U -orbit Ω has size two or four. In either case
+(10)                                      ⟨CT Ω (u) : u ∈ U # ⟩ = T Ω .
+For a two-element orbit, a swapping involution has a diagonal fixed subgroup T . A kernel involution has
+a nonidentity fixed element in one coordinate: an involution acting on an even-order group has an even-
+order fixed subgroup. Conjugating this coordinate element by the diagonal generates the coordinate simple
+group, and then both factors. For a four-element orbit, identify the coordinates along the regular U -action.
+Centralizers of the three involutions contain diagonals on pairs of coordinates. Commutators of two such
+diagonals on intersecting pairs isolate one coordinate, and perfection generates all four coordinates. These
+arguments are unchanged by the initial choices of coordinate identifications.
+   All the lifted centralizers in (10) lie in M , and (9) absorbs the odd kernels. Thus, the corresponding
+product of factors of Dg lies in M . By Theorem 5.4, each such factor lies in a marked factor of D and
+covers its simple quotient. Taking one of them as the new X reduces to Case 1.
+Case 3. X normalizes every factor of Dg . Choose a fourgroup U ≤ X and a factor K1 of Dg . The
+perfect image of X on K1 /O(K1 ) lies in Inn(T ), because Out(T ) is solvable by Theorem 2.6. Its odd-by-T
+structure then forces this image to be either trivial or all of Inn(T ). In the latter case the image of U is a
+fourgroup. It follows, with odd-kernel lifting in either case, that
+                               ⟨CK1 (u) : u ∈ U # ⟩   contains a fourgroup E1 .
+Every displayed centralizer lies in M , so E1 ≤ M . Its pure involution centralizers lie in M g . Thus, coprime
+generation gives O(M ) ≤ M g , and consequently Lj ≤ M g .
+   Every generator used to construct E1 fixes an involution whose image in D/O(D) has support precisely
+Lj . Hence it normalizes the actual factor Lj , and E1 normalizes CM (Lj ). This group is even, as it contains
+the images of opposite factors. A 2-group acting on an even-order finite group has an even-order fixed
+subgroup. Choose                                                   
+                                            z ∈ Inv CCM (Lj ) (E1 ) .
+Since z centralizes a pure involution of E1 ≤ K1 , it belongs to M g . Theorem 5.4 in M g now puts Lj in
+Dg . Taking X = Lj reduces to Case 1. We have proved
+(11)                             X ≤ M g,     Lj ≤ O(D)X        =⇒        g ∈ M.
+   Finally suppose t ∈ CM (Li ) and tg ∈ CM (Lj ) are nonidentity 2-elements. Conjugating (8) at t puts
+Ltg in M g . The fixed-point subgroup (Lj )⟨tg ⟩ belongs to this layer and covers Lj /O(Lj ), by Theorem 4.3.
+It supplies the subgroup X in (11). Thus, g ∈ M , proving the first condition as well. The embedding
+criterion contradicts M < G, r ≥ 2, and m2 (Li ) = 2.                                                      □
+
+                                   7. The Signalizer Construction
+   This section develops the signalizer argument in Solomon’s maximal-2-component method [26] for the
+marked family. Goldschmidt’s signalizer functor theorem [14] assembles compatible odd-order subgroups
+of involution centralizers into one odd-order group. The later recovery of this group as the odd core of its
+normalizer follows Solomon’s argument [26, Lemma 3.11], with the component containments written out
+below.
+                                                                                                            21
+
+
+   Suppose a pair of components interchanged by an involution exists. Choose an F -balanced subgroup N
+for which the number r(N ) of marked 2-components is as large as possible. Every F -balanced subgroup
+is proper, since the simple group G has only one global 2-component. Write
+                     D(N ) = K1 · · · Kr ,      N0 = O2′ ,2 (N )L2′ (N ),   Qi = CN0 (Ki ).
+Such an N exists: the original centralizer contains the two marked components Y, Y s , and its central
+involution supplies the additional common-kernel involution. F -balancedness gives m2 (Qi ) ≥ 3.
+   For i ̸= j, choose commuting fourgroups F = V ≤ Ki and E = B0 ≤ Kj . Such a pair exists by
+fixed-point lifting on Kj under a fourgroup of Ki . Put Q = CN0 (Ki Kj ). The selected factors are normal in
+N0 , with centerless simple images modulo O(N ), so Q is normal in N0 and Q ∩ Ki Kj = O(Ki Kj ) is odd.
+The group Q is even: this is F -balancedness if r = 2, and a third marked component is contained in Q if
+r ≥ 3. Choose S ∈ Syl2 (N0 ) containing EF and then choose
+                                   z0 ∈ Ω1 (Z(S) ∩ Q)# ,        B = E × ⟨z0 ⟩.
+The normal subgroup S ∩ Q is nontrivial, so this choice exists. Since z0 ∈
+                                                                         / Ki Kj , the group B has rank
+three, B ∩ Kj = E, and B ≤ CQi (F ). Moreover B centralizes S ∩ Km for every m ̸= j: distinct component
+factors commute inside S, since their commutators lie in O(N ) ∩ S = 1. These are the admissible pairs
+used below.
+   Write Ot = O(CG (t)) in this section. Define
+                                                         W (B, V ) = ⟨θV (b) : b ∈ B # ⟩.
+                                                      
+(12)             θV (b) = [O(Cb ), V ] O(Cb ) ∩ O(CV ) ,
+For commuting elementary abelian 2-subgroups B, V , we use the same formula to define W (B, V ), even
+when B has rank less than three.
+   A solvable B-signalizer functor is a family (θ(b))b∈B # of B-invariant solvable odd-order subgroups θ(b) ≤
+CG (b) such that
+                                             θ(b) ∩ CG (a) ≤ θ(a)
+                  #
+for all a, b ∈ B . Goldschmidt’s 2-signalizer functor theorem [14] states that, if m2 (B) ≥ 3, then W =
+⟨θ(b) : b ∈ B # ⟩ has odd order and CW (b) = θ(b) for every b ∈ B # .
+   To apply Goldschmidt’s theorem, we must establish compatibility on intersections of centralizers. The
+marked components provide the required control of the local layers.
+Proposition 7.1 (Signalizer balance). For every family S satisfying Theorem 3.6, form the marked family
+F as above. For every admissible pair (B, V ) in an F -balanced subgroup with the maximum possible number
+of marked components, for all a, b ∈ B # , we have
+                                             θV (b) ∩ CG (a) ≤ θV (a).
+Proof. An odd-order normal subgroup of H centralizes E(H). If U ≤ H is a 2-group, then O(CH (U )) also
+centralizes O2 (H): it centralizes CO2 (H) (U ), so Thompson’s A × B-lemma [24, Theorem 1] applies. When
+O(H) = 1, an odd-order subgroup centralizing F ∗ (H) is trivial, by CH (F ∗ (H)) ≤ Z(F ∗ (H)).
+   We claim that, for every v ∈ V # , the image of V centralizes E(Cv /Ov ). Transport Kj at v using
+Theorem 4.3, and call the resulting 2-component of Cv J. The odd order of CKj (v)/(Kj )v gives E ≤
+(Kj )v ≤ J. The group V normalizes (Kj )v and acts trivially modulo its odd core. The normal-closure
+equality in (5) shows that V normalizes J, and J = O(J)(Kj )v then shows that it centralizes the image of
+J in Cv /Ov .
+   Let R ̸= J be another 2-component of Cv , and choose e ∈ E # . Distinct component images commute,
+so e ∈ CG (R). By Theorem 2.4, the group D = Re covers R/O(R) and is a 2-component of C = Ce ∩ Cv .
+By L2′ -balance, D ≤ L2′ (Ce ). Transporting Ki at e gives a marked 2-component I of Ce containing V .
+Work for the moment modulo Oe , using bars for images. The centerless simple component I¯ ∼          = T is a
+direct factor of E(Ce /Oe ). The projection of D̄ onto I¯ is perfect and lies in CI¯(v̄), which is solvable by
+Theorem 2.6. This projection is trivial. All other components commute with I,    ¯ so [D, V ] ≤ Oe .
+22                                               AXIOM MATH
+
+
+    Now V normalizes C, and [D, V ] ≤ Oe ∩C ≤ O(C). The component correspondence in C/O(C) therefore
+shows that V normalizes the canonical perfect lift D. Consequently [D, V ] ≤ D ∩ Oe ≤ O(D). The fixed-
+layer lemma gives O(D) = D ∩ O(R) ≤ Ov . Since D covers R/O(R), the image of V centralizes the image
+of R in Cv /Ov . This proves the claim.
+    Fix b ∈ B # and v ∈ V # , and now put H = Cv /Ov , again using bars for images. Odd-kernel fixed-point
+lifting shows that the image X̄ of X = Ob ∩ Cv is an odd-order normal subgroup of CH (b̄). Thus, X̄
+centralizes O2 (H). The group V normalizes X and, by the claim, V̄ centralizes E(H). Since CH (E(H)) is
+normal in H, the odd-order group [X̄, V̄ ] centralizes both E(H) and O2 (H) and is therefore trivial.
+    Similarly, the image of O(CV ) is an odd-order normal subgroup of CH (V̄ ). Every component of H is a
+component of CH (V̄ ), because V̄ centralizes E(H). The observations at the start of the proof show that
+this image centralizes both E(H) and O2 (H), so it too is trivial. We have proved
+(13)                                [Ob ∩ Cv , V ] ≤ Ov ,     O(CV ) ≤ Ov .
+  Put P = [Ob , V ]. Since P ⊴ Ob , the product θV (b) is an odd-order subgroup. We have P = [P, V ], and
+Goldschmidt’s coprime-action lemma [12, Lemma 2.3] gives
+                                            D                           E
+                                   CP (V ) = C[CP (w),V ] (V ) : w ∈ V # .
+By (13), each group [CP (w), V ] lies in Ow , so its V -centralizer lies in Ow ∩ CV ≤ O(CV ). Thus, CP (V ) ≤
+O(CV ). Coprime action and (13) now give
+                                      CP (v) = [CP (v), V ]CP (V ) ≤ Ov .
+The second factor of θV (b) = P (Ob ∩ O(CV )) centralizes V . Hence CθV (b) (v) ≤ Ob ∩ Ov . Conversely, factor
+the odd-order V -invariant group Ob ∩ Ov under V . Its commutators with V lie in P , and its V -centralizer
+lies in Ob ∩ O(CV ). This proves
+(14)                                         CθV (b) (v) = Ob ∩ Ov .
+     Let a, b ∈ B # and v ∈ V # . We next show that
+(15)                                         Ob ∩ Ov ∩ Ca ≤ Oa .
+This time work in H = Ca /Oa , with bars denoting images. Transport Ki at a to a marked 2-component
+                                                                                                   ¯ The
+I of Ca . As before, V ≤ I. Since b centralizes a and acts trivially on Ki /O(Ki ), it centralizes I.
+images of Ob ∩ Ca and Ov ∩ Ca are odd-order normal subgroups of CH (b̄) and CH (v̄), respectively. The
+                  ¯ which is a component of CH (b̄). The second centralizes O2 (H) and every component of
+first centralizes I,
+                ¯
+H other than I, since those components commute with v̄ ∈ I.  ¯ Thus, the image of Ob ∩ Ov ∩ Ca centralizes
+   ∗
+F (H) and is trivial. This proves (15).
+    Finally, X = θV (b) ∩ Ca has odd order and is normalized by V . Equations (14) and (15) give
+                                 CX (v) = Ob ∩ Ov ∩ Ca ≤ Oa ∩ Ov ≤ θV (a)
+for every v ∈ V # . Fourgroup generation yields X = ⟨CX (v) : v ∈ V # ⟩ ≤ θV (a), as required.              □
+  Goldschmidt’s theorem now assembles these subgroups into an odd-order group and recovers them as
+the centralizers of its involutions.
+Lemma 7.2. For every admissible pair (B, V ), the group W (B, V ) has odd order, and for all b ∈ B # , we
+have
+                                       CW (B,V ) (b) = θV (b).
+Proof. Since [O(Cb ), V ] ⊴ O(Cb ), each θV (b) is an odd-order subgroup of Cb , hence solvable. The group B
+normalizes both defining factors. Proposition 7.1 therefore makes θV a solvable B-signalizer functor. Since
+m2 (B) = 3, Goldschmidt’s theorem [14] applies.                                                            □
+                                                                                                            23
+
+
+7.1. The fourgroup calculation. The signalizer argument requires freedom to change the acting sub-
+groups. We begin with a marked component: each involution of an acting fourgroup gives the same theta
+subgroup as the whole fourgroup.
+Lemma 7.3. Let K be marked, let A ≤ CG (K) be a fourgroup, and let f ∈ Inv(K) centralize A. Put
+Ot = O(CG (t)). Then, for every u ∈ A# ,
+                                 θA (f ) ∩ CG (u) ≤ Ou ,     θA (f ) = θ⟨u⟩ (f ).
+Proof. Let Ju be the containing component supplied by Theorem 4.3 for Ku = CK (u)(∞) . Since CK (u)/Ku
+is odd, f ∈ Ku . The group A normalizes Ku and acts trivially on its odd-core quotient. Since Ju =
+O(Ju )Ku , the image of A centralizes the component image of Ju in CG (u)/Ou . Canonical component lifting
+therefore gives normalization of Ju by A as well. Every other component of this quotient is centralized by
+f.
+   Put X = Of ∩ CG (u) and H = CG (u)/Ou . The image of X is an odd-order normal subgroup of CH (f¯),
+where bars denote images in H. By [12, Lemma 2.1(iii)], it normalizes every component and centralizes
+those other than J¯u . It also centralizes O2 (H), by the A × B-argument in the proof of Theorem 7.1. Since
+Ā centralizes J¯u , the commutator [X̄, Ā] centralizes F ∗ (H) and is trivial. Thus,
+(16)                                       [Of ∩ CG (u), A] ≤ Ou .
+We also have
+(17)                                   Of ∩ O(CG (A)) ∩ CG (u) ≤ Ou .
+Indeed, J¯u is a component of CH (Ā), so the image of O(CG (A)) centralizes it. The image of Of ∩ CG (u)
+centralizes the other components and O2 (H), as above.
+  Set P = [Of , A]. Coprime action gives P = [P, A]. Goldschmidt’s coprime lemma [12, Lemma 2.3] gives
+                              CP (A) = ⟨CP (A) ∩ [CP (U ), A] : U a line of A⟩ .
+For U = ⟨w⟩, equation (16) puts [CP (U ), A] in Ow . Its A-fixed part lies in Ow ∩ CG (A) ≤ O(CG (A)).
+Thus, CP (A) ≤ O(CG (A)). Now Z = CP (u) satisfies Z = [Z, A]CZ (A). Equation (16) handles the first
+factor and (17) handles the second. Hence CP (u) ≤ Ou . Finally
+                                                                
+                                      θA (f ) = P Of ∩ O(CG (A))
+is a product of odd A-invariant subgroups, with the first normal in the product. Fixed points under ⟨u⟩
+factor across this product by coprime fixed-point lifting. Equation (17) handles the second factor, proving
+the first assertion.
+   Factor θA (f ) under ⟨u⟩. Its commutator part lies in [Of , u] and its fixed part lies in Of ∩ Ou . Thus,
+θA (f ) ≤ θ⟨u⟩ (f ). For the reverse inclusion, let U ≤ A and factor the odd A-invariant group Of ∩ O(CG (U ))
+under A. Its commutator part lies in [Of , A], and its fixed part lies in Of ∩ O(CG (A)), because CG (A) ≤
+CG (U ). Thus, θU (f ) ≤ θA (f ).                                                                           □
+  Applying this in opposite components makes the construction symmetric in the two fourgroups.
+Lemma 7.4. Let E ≤ Kj and F ≤ Ki be commuting fourgroups, i ̸= j. Then we have
+                                            W (E, F ) = W (F, E).
+If the original admissible rank-three group B contains E, both groups are equal to the original W (B, F ).
+Proof. Apply Theorem 7.3 to Kj , A = F, f = e and to Ki , A = E, f = v. For e ∈ E # and v ∈ F # it gives
+                                      CθF (e) (v) = Oe ∩ Ov = CθE (v) (e).
+The reverse containments here follow from θ⟨v⟩ (e) ≤ θF (e) and its swapped version. Fourgroup generation
+of each individual odd theta group gives
+                       θF (e) = ⟨Oe ∩ Ov : v ∈ F # ⟩,      θE (v) = ⟨Ov ∩ Oe : e ∈ E # ⟩.
+24                                               AXIOM MATH
+
+
+Taking joins proves the equality.
+  For the last assertion, the cross-balance estimate from the original rank-three construction gives
+                                              CθF (b) (e) ≤ θF (e)
+for b ∈ B # and e ∈ E # . Fourgroup generation of the odd E-invariant group θF (b) therefore puts it in
+W (E, F ). The opposite containment is immediate.                                                    □
+  This symmetry places odd-order subgroups normalized by both fourgroups, including the relevant odd
+cores, inside NG (W ).
+Lemma 7.5. Retain the E, F, W above, and put H = NG (W ). Every odd-order subgroup X normalized
+by E and F lies in H. Consequently, for every involution s ∈ CG (EF ), we have
+                                     O(CG (s)) ≤ H      and    O(N ) ≤ H.
+Proof. Restriction of the acting fourgroup in Theorem 7.3 and Theorem 7.4 give
+(18)                         CG (E) ∩ CG (v) ≤ H      and CG (F ) ∩ CG (e) ≤ H
+for all v ∈ F # and e ∈ E # . For example W = W (E, ⟨v⟩), whose defining terms are preserved by every
+element centralizing E and v.
+   For e ∈ E # , the component supplied by Theorem 4.3 of (Ki )e gives a centerless simple component Se
+of CG (e)/Oe containing the image of F and centralized by the image of E. The containment uses the odd
+quotient CKi (e)/(Ki )e ; the kernel action uses the fixed-point and containing component argument at the
+start of Theorem 7.3.
+   Double fourgroup generation reduces X ≤ H to Y = CX (⟨e, v⟩) ≤ H, for e ∈ E # , v ∈ F # . This Y is
+odd and still E, F -invariant. Work modulo Oe . The image Ȳ normalizes Se . Indeed, if an odd group is
+normalized by a noncentral involution t of a component S, and S y ̸= S, the components S, S y commute.
+Then ty t−1 is an element of the odd group of order at most two, so ty = t. This puts t in S ∩ S y ≤ Z(S),
+a contradiction. Apply this observation to a nonidentity element of the image of F .
+   Thus, [Ȳ , F̄ ] ≤ Se and [[Ȳ , F̄ ], Ē] = 1. Since E, F commute, the three-subgroups lemma gives
+                                             U = [[Y, E], F ] ≤ Oe .
+Coprime action gives U = [U, F ], so U ≤ [Oe , F ] ≤ W ≤ H. Now factor twice:
+                                Y = CY (E)[Y, E],        [Y, E] = C[Y,E] (F ) U.
+The two fixed factors belong to the two centralizers in (18); the third factor is in W . Hence Y ≤ H,
+proving X ≤ H. For any involution s centralizing EF , its odd centralizer core is E, F -invariant. The same
+is true of O(N ). This proves the last assertions, including involutions outside N0 .                     □
+  If W = W (B, V ) ̸= 1, its odd order and simplicity of G give H = NG (W ) < G. Put E0 = EF = B0 V .
+By Theorem 7.5 and the definition of W , we have
+                             CG (E0 ) ≤ H,       O(N ) ≤ H,          O(CG (x)) ≤ H
+for every involution x ∈ CG (E0 ).
+7.2. The normalizer of the signalizer subgroup. If W is nontrivial, its normalizer H is proper. The
+central claim is that W = O(H) and that this odd core can be recovered from other pairs of subgroups in
+the marked components of H. The necessary component containments are proved along the way.
+Lemma 7.6 (Recovery of the odd core). If W (B, V ) ̸= 1 and H = NG (W (B, V )), then
+(19)                                     N0 ≤ H       and     Lx ≤ H
+for every x ∈ Inv(Ki ) and every 1 ≤ i ≤ r. Moreover, we have
+(20)                        W (B, V ) = O(H)      and    D(H) = O(D(H))D(N ).
+                                                                                                           25
+
+
+For every fourgroup B ∗ in one marked factor of H and every nontrivial elementary abelian subgroup V ∗
+in a different marked factor of H centralizing B ∗ ,
+                                  D                                            E
+                          O(H) = [O(Cb ), V ∗ ] O(Cb ) ∩ O(CV ∗ ) : b ∈ (B ∗ )# .
+                                                                 
+(21)
+In particular, V ∗ is allowed to have order two.
+Proof. Putting the original N0 in H. Write E = B0 ≤ Kj and F = V ≤ Ki , and retain the original
+W = W (B, V ) and H = NG (W ). By Theorems 7.4 and 7.5, we have
+                      W = W (E, F ) = W (F, E),        O(N ) ≤ H,       O(CG (t)) ≤ H,
+(22)
+                                   CG (E, v) ≤ H     and    CG (F, e) ≤ H
+for all t ∈ Inv(CG (EF )), v ∈ F # , and e ∈ E # .
+   Put Q = CN0 (Ki Kj ). The image of N0 modulo O(N ) is the generalized Fitting subgroup of N/O(N ).
+The two selected marked factors have centerless simple images and are normal in this generalized Fitting
+subgroup. Hence Q is normal in N0 and Q ∩ Ki Kj = O(Ki Kj ) is odd. Moreover Q is even: if r = 2, this
+is F -balancedness; if r ≥ 3, Q contains a third marked component.
+   Choose S ∈ Syl2 (N0 ) containing EF . The nontrivial normal subgroup S∩Q of S meets Z(S) nontrivially,
+so choose z ∈ Ω1 (Z(S) ∩ Q)# . Thus, z ∈   / Ki Kj , and E⟨z⟩ is an admissible rank-three group with the same
+original W . More relevantly, E⟨z⟩ centralizes the full Sylow subgroup S ∩ Km for every m ̸= j: z is central
+in S, and the commutators of E ≤ Kj ∩ S with Km ∩ S lie in O(N ) ∩ S = 1. Furthermore, ⟨e, z⟩ and ⟨v, z⟩
+are actual fourgroups in the appropriate opposite action kernels, for e ∈ E # and v ∈ F # . Every acting
+subgroup in these groups normalizes the marked factor and acts trivially modulo its odd core. Theorem 7.3
+therefore gives
+                                      θE (v) = θ⟨e⟩ (v) = θ⟨e,z⟩ (v) = θ⟨z⟩ (v),
+and the analogous equality θF (e) = θ⟨z⟩ (e). Consequently
+                                       W = W (E, ⟨z⟩) = W (F, ⟨z⟩).
+In particular CG (Ez), CG (F z) ≤ H. Odd-kernel fixed-point lifting on the components now gives
+                        Ki = O(Ki )CKi (Ez) ≤ H,           Kj = O(Kj )CKj (F z) ≤ H.
+The remaining generalized-Fitting factors of N/O(N ) centralize the image of EF . Their full inverse image
+in N0 is therefore contained in O(N )CN0 (EF ) by odd-kernel fixed-point lifting, and is contained in H by
+(22). Together with Ki , Kj ≤ H, this proves N0 ≤ H.
+Pure-involution local containment. We record explicitly why the containment extends to every pure invo-
+lution, not just the original E, F . First use the following elementary observation. Suppose t ∈ H is an
+involution, Ot = O(CG (t)) ≤ H, and an actual 2-component J of CG (t) lies in H and contains a fourgroup
+A such that CG (t, A) ≤ H. Then
+(23)                                        O2′ ,2 (CG (t))Lt ≤ H.
+Indeed every other 2-component M has image centralized by A in CG (t)/Ot . Canonical lifting gives actual
+normalization, and odd-kernel fixed-point lifting gives
+                                  M = O(M )CM (A) ≤ Ot CG (t, A) ≤ H.
+The identical argument for O2′ ,2 (CG (t)), whose quotient by Ot centralizes the component image of J,
+proves (23).
+   For t = e ∈ E # , use the component supplied by Theorem 4.3 of (Ki )e , which contains F and lies in H,
+since Ki , Oe ≤ H. For t = v ∈ F # interchange the roles. Thus, (23) holds for all involutions in E and F .
+By Theorem 2.6, the group T has one conjugacy class of involutions. Odd-kernel complement conjugacy
+gives the same assertion in each Km . Since Ki , Kj ≤ H, conjugating by these groups proves (23), and
+Ot ≤ H, for every involution in Ki or Kj .
+26                                                 AXIOM MATH
+
+
+   Now let t ∈ Inv(Km ) with m ∈ / {i, j}. The group EF acts trivially on Km /O(Km ). Fixed-point lifting,
+followed by conjugacy of involution lifts over the odd kernel, allows conjugation of t by an element of
+O(Km ) ≤ H so that [t, EF ] = 1. Then Ot ≤ H by (22). For e ∈ E # , the group ⟨e, t⟩ is a fourgroup in
+CG (Ki ) centralizing F . Theorem 7.3 gives
+                                     θE (v) = θ⟨e⟩ (v) = θ⟨e,t⟩ (v) = θ⟨t⟩ (v)
+for all v ∈ F # . Thus, W = W (F, ⟨t⟩) and CG (t, F ) ≤ H. The component supplied by Theorem 4.3 of
+(Ki )t lies in H and contains F . The preceding observation proves (23). Undoing the conjugation covers
+the original t. We have proved
+(24)                             O(CG (t)) ≤ H      and    O2′ ,2 (CG (t))Lt ≤ H
+for every t ∈ Inv(Km ) and every 1 ≤ m ≤ r.
+Recovering the odd core. Put R = O(H). For a pure involution t, the odd group CR (t) is normal in CH (t).
+By (24), every component and the O2′ ,2 -subgroup of CG (t) lie in H. Intersecting the component subnormal
+chains with CH (t) therefore shows that the image of CR (t) centralizes every component of CG (t)/O(CG (t)).
+It also centralizes the normal 2-core of that quotient. Self-centralization of the generalized Fitting subgroup
+gives
+(25)                                          CR (t) ≤ O(CG (t))
+for every t ∈ Inv(Km ) and every 1 ≤ m ≤ r. For any v ∈ F # this implies
+                                    CR (F ) ≤ Ov ∩ CG (F ) ≤ O(CG (F )).
+Hence, for e ∈ E # , coprime factorization gives
+                                                                                
+                     CR (e) = [CR (e), F ]CR (e, F ) ≤ [Oe , F ] Oe ∩ O(CG (F )) = θF (e).
+Conversely θF (e) ≤ W ≤ R and this group centralizes e, so equality holds. Fourgroup generation under E
+proves
+                               R = ⟨CR (e) : e ∈ E # ⟩ = W (E, F ) = W.
+The marked components of H. Theorem 5.3 applies to N0 ≤ H < G. It places each marked factor of N
+in a marked factor of H, with distinct factors remaining distinct, and proves H F -balanced. Maximality
+of r(N ) permits no additional marked factors. If Ki′ is the factor of D(H) containing Ki , both quotients
+Ki /O(Ki ) and Ki′ /O(Ki′ ) are isomorphic to T . Since Ki ∩ O(Ki′ ) ≤ O(Ki ), comparison of orders gives
+Ki′ = O(Ki′ )Ki . Multiplying these equalities gives
+                                          D(H) = O(D(H))D(N ).
+This proves (20). For the rest of this proof, use K1 , . . . , Kr for the marked components of H, retaining N
+for the original subgroup.
+The general core-recovery identity. After F -balanced inheritance and the maximal choice give D(H) =
+O(D(H))D(N ), every pure involution in an enlarged marked factor is conjugate by its odd core into its
+original factor. The conjugating element belongs to H, so (24) and (25) remain valid for the enlarged
+factors. Let B ∗ ≤ Km be a fourgroup and let 1 ̸= V ∗ ≤ CKn (B ∗ ) be elementary abelian, with m ̸= n. The
+first containment in the core-recovery calculation of [26, Lemma 3.11] is θV ∗ (b) ≤ R for every b ∈ (B ∗ )# .
+Here is its actual-component justification. The group Ob lies in H and has odd normal image in CH/R (bR):
+it is normal in CH (b), and odd-kernel centralizer lifting makes CH (b) → CH/R (bR) surjective. It therefore
+centralizes all generalized-Fitting factors of H/R except possibly the marked component containing bR. In
+particular [Ob , V ∗ ] ≤ R. The component supplied by Theorem 4.3 of (Km )V ∗ lies in Lv ≤ H for v ∈ (V ∗ )# ,
+by L2′ -balance. Its image in H/R is precisely the marked component containing bR: (Km )V ∗ covers
+that component, and a perfect odd-by-T image containing this actual component equals it. Its odd core
+therefore lies in R. The odd group O(CG (V ∗ )) centralizes this containing component modulo its odd core.
+Consequently Ob ∩ O(CG (V ∗ )) also centralizes the remaining marked component image. Self-centralization
+of F ∗ (H/R) gives Ob ∩ O(CG (V ∗ )) ≤ R, as required.
+                                                                                                                27
+
+
+  Conversely, (25) gives CR (b) ≤ Ob and CR (V ∗ ) ≤ O(CG (V ∗ )): for the latter, intersect O(CG (v)) with
+CG (V ∗ ) for any v ∈ (V ∗ )# . Coprime factorization under V ∗ now gives
+                                   CR (b) = [CR (b), V ∗ ]CR (b, V ∗ ) ≤ θV ∗ (b).
+Thus, CR (b) = θV ∗ (b), and fourgroup generation under B ∗ proves (21). The group V ∗ may have order two
+throughout this argument.                                                                               □
+  The recovery formula forces NG (W ) to contain all the pure-involution centralizers required by the
+embedding lemma. A nontrivial W would therefore give a contradiction.
+Lemma 7.7 (Vanishing of the signalizer). Every admissible pair (B, V ) in (12) satisfies W (B, V ) = 1.
+Proof. Suppose W ̸= 1 and use the enlarged F -balanced subgroup H from Theorem 7.6. An element
+g ∈ NG (D(H)) permutes the marked components of H and carries each pair in (21) to another such pair.
+Conjugating that equality gives O(H)g = O(H). Since H = NG (O(H)), we obtain NG (D(H)) ≤ H.
+Conversely, H normalizes D(H) by its definition, so NG (D(H)) = H.
+  Let x be a pure involution of D(H) and g ∈ CG (x). Choose a fourgroup in the component of CG (x)
+obtained from a different marked factor by Theorem 4.3. This component and its g-conjugate lie in H,
+by (19). Theorem 5.4 places them in marked factors of H. Neither can lie in the factor containing x:
+otherwise its image would cover that simple factor while centralizing the noncentral involution x̄. Apply
+(21) to the fourgroup and ⟨x⟩, and to their g-conjugates. This gives O(H)g = O(H) and hence g ∈ H.
+Thus, H satisfies Theorem 6.1, a contradiction.
+                                                                                                       □
+
+                               8. Excluding Interchanged Components
+  We complete the exclusion argument using Solomon’s signalizer method and his application of As-
+chbacher’s embedding criterion [26], developed in the preceding sections. Vanishing of the signalizer first
+makes the selected 2-components ordinary: their odd cores are central, so they are quasisimple. This
+permits the exact normalizer comparisons needed for the final contradiction.
+Lemma 8.1. The selected layer D = D(N ) is semisimple. For every pure involution b ∈ D, the entire
+group L2′ (CG (b)) is semisimple, and each opposite factor of D is an ordinary component of CG (b).
+Proof. Fix distinct indices i, j, take a fourgroup B0 ≤ Kj , and choose a fourgroup V ≤ (Ki )B0 . Extend
+B0 to the admissible rank-three group B = B0 × ⟨z0 ⟩ using the pair-kernel and central Sylow construction
+at the start of Section 7. It applies to every pair of distinct marked factors, for r = 2 as well as r ≥ 3, and
+preserves the commuting fourgroups.
+   For b ∈ B0# , vanishing says that O(Cb ) centralizes V . Let Jb be the unique containing component of
+(Ki )⟨b⟩ . The normal subgroup CJb (O(Cb )) contains V , so its image is a nontrivial normal subgroup of
+Jb /O(Jb ) ∼= T . It covers this quotient; its quotient in the perfect group Jb is odd, hence trivial. Thus,
+[O(Cb ), Jb ] = 1, in particular O(Jb ) ≤ Z(Jb ). Perfection and Jb = O(Jb )(Ki )⟨b⟩ give Jb = (Ki )⟨b⟩ , which is
+quasisimple.
+   The fourgroup B0 acts trivially on each (Ki )b modulo its center. To see that it centralizes (Ki )b , put
+Q = (Ki )b and take a ∈ B0 . Since [Q, a] ≤ Z(Q), the map
+                                        Q −→ Z(Q),           x 7−→ x−1 xa
+is a homomorphism. The group Q is perfect, so every homomorphism from Q to an abelian group is trivial.
+Thus, a centralizes Q, as required. Put R = CKi (B0 ). For every b ∈ B0# , the perfect subgroup (Ki )b lies
+in R, so (Ki )b ≤ R(∞) . Conversely, R ≤ CKi (b) implies
+                                          R(∞) ≤ CKi (b)(∞) = (Ki )b .
+Thus, all the groups (Ki )b coincide with R(∞) ; denote this common subgroup by P . Each CO(Ki ) (b)
+normalizes P , and these centralizers generate O(Ki ). Hence P ⊴ Ki . Since Ki = O(Ki )P , the quotient
+28                                              AXIOM MATH
+
+
+Ki /P is a quotient of the odd-order group O(Ki ) and is therefore solvable by the odd-order theorem. It
+is also perfect, being a quotient of the perfect group Ki . A solvable perfect group is trivial, so Ki = P .
+Thus, all the Ki are ordinary components.
+   Vanishing also gives, for pure involutions b ∈ Ki , v ∈ Kj ,
+(26)                             [O(Cb ), Kj ] = 1,    O(Cb ) ∩ O(Cv ) = 1.
+For the first assertion, vary the fourgroups in Kj ; their involutions generate Kj . For the second, take a
+fourgroup V ≤ Kj containing v. The intersection in question centralizes V , and O(Cv ) ∩ CV ≤ O(CV ).
+It is therefore killed by θV (b) = 1. The first assertion and the single-component identity show that the
+containing component of Kj in Cb is just Kj : its extra odd kernel centralizes the perfect subgroup covering
+its quotient.
+   Write
+                                        Lb = Kj Rb ,      Lv = Ki Rv ,
+where Rb , Rv are the products of the other 2-components. The ordinary component Kj centralizes Rb , so
+Rb ≤ Cv . Intersecting subnormal chains puts its factors in Cb ∩ Cv ; L2′ -balance inside Cv , with acting
+subgroup b, gives Rb ≤ Lv . Its image in Ki /Z(Ki ) ∼= T is a perfect subgroup of the involution centralizer
+CT (b̄), which is solvable by Theorem 2.6, and is therefore trivial. Perfection removes the remaining central
+image, so Rb ≤ Rv . Symmetry gives equality. Its odd core lies in both O(Cb ) and O(Cv ) and is trivial by
+(26). Thus, Rb is semisimple, and so is Lb .                                                               □
+  Semisimplicity strengthens the earlier containments to equalities, giving control of the normalizer of
+every nonempty product of selected components.
+Lemma 8.2. For every nonempty product D0 of components of D, put H0 = NG (D0 ). Then we have
+D(H0 ) = D and NG (D0 ) ≤ NG (D).
+Proof. The subgroup H0 is proper, since 1 < D0 ≤ D < G and G is simple. Also N0 ≤ H0 : each component
+and the subgroup O2′,2 (N ) normalize each chosen component of D. Theorem 5.3 and maximality of r give
+only the preliminary equality D(H0 ) = O(D(H0 ))D.
+   Each factor A of D0 is an ordinary component of H0 , since D0 ⊴ H0 . If Kj lies outside D0 , let Kj′ be
+the marked component of H0 containing it. For b ∈ Inv(A), the ordinary component A centralizes Kj′ , so
+Kj′ is a 2-component of CH0 (b). Theorem 8.1 makes Kj an actual component of CG (b), and intersection
+of subnormal chains makes it a component of CH0 (b). Thus, Kj ≤ Kj′ are two actual 2-components of
+the same group, so Kj = Kj′ . The inside factors were already components, and the maximal number r
+excludes extra marked factors. This proves D(H0 ) = D. Its conjugacy-invariant definition then implies
+H0 ≤ NG (D).                                                                                            □
+  Applied to the pure-involution centralizers, this normalizer control gives the contradiction to the em-
+bedding lemma that excludes interchanged components.
+Theorem 8.3 (Exclusion of interchanged components). Under Theorem 2.2, a GS-maximal local 2-
+component Y of top T cannot be interchanged with a distinct component by a commuting involution. More
+precisely, if Y is a 2-component of CG (z) and s is an involution commuting with z, then Y s = Y .
+Proof. If a pair of components interchanged by an involution existed, the marked construction and the
+maximizing F -balanced subgroup above would be available. Put H = NG (D). By Theorem 8.2, H is
+proper and F -balanced and D(H) = D. For b ∈ Inv(Ki ), every opposite factor Kj is an actual ordinary
+component of CG (b). Hence its layer normalizes Kj , and Theorem 8.2 gives
+                                             Lb ≤ NG (Kj ) ≤ H.
+Every marked component of CG (b) therefore lies in H and has the kernel involution b there. Theorem 5.4
+puts it in a marked component of H. Both groups are now quasisimple, by Theorem 8.1; containment and
+                                                                                                          29
+
+
+equality of their simple tops force equality. Consequently D(CG (b)) is a nonempty product of components
+of D. It is normalized by CG (b), so
+                                       CG (b) ≤ NG (D(CG (b))) ≤ H.
+The last containment is Theorem 8.2. Thus, H meets all the hypotheses of Theorem 6.1, a contradiction.
+                                                                                                    □
+8.1. Proof of the comparison theorem. A GS-maximal component admits no outgoing mirror step.
+Combining this exclusion with closure under GS correspondences and conjugacy proves preservation for
+the components reached from the GS-maximal predecessors constructed in Theorem 3.5.
+Proof of Theorem 2.3. Let M be the family of all GS-maximal local 2-components of top T . Every member
+belongs to FT , and Theorem 2.5 gives its quotient by its odd core as T . The family M is closed under
+conjugacy. It is also closed under a forward GS correspondence: if Y is GS-maximal and Y −→GS X,
+any forward chain starting at X can be prefixed by this edge, so every endpoint has top T and X is itself
+GS-maximal.
+   No mirror step starts at a member of M . Such a step would have commuting witnesses z, s with Y
+a 2-component of CG (z) and Y s ̸= Y , contradicting Theorem 8.3. Thus, M is closed under the entire
+relation ⇝, and every member is mirror-maximal.
+   Take A ∈ FT . Theorem 3.5 supplies Y ∈ M with Y ⇝ A. Closure forces A ∈ M . If also A ⇝ J, the
+same closure gives J ∈ M , so τ (J) ∼
+                                    = T.                                                               □
+
+                                      9. The Deduction of UGT
+   The deduction of UGT combines Foote’s recognition theorem [12] with the reductions of Gilman–Solomon
+[13, §§1, 3–4], including the recognition result of Foote and Harris recorded in their Theorem 1.7. The
+comparison theorem supplies the passage from pointed maximality to the maximality required for recog-
+nition. We first specify the maximality and core conditions used in this application. Call a pair (x, L)
+Foote-maximal if L is a 2-component of CG (x) and every chain of the unpointed relation generated by (2)
+preserves τ (L). In the unpointed relation the witnessing involution may be chosen anew at each step. Such
+a pair is pointed-maximal, since every pointed chain is also an unpointed chain.
+   If m2 (CG (L)) = 1, then (x, L) is Foote-maximal: the distinct commuting witnesses of any first step
+would generate a fourgroup in CG (L).
+   An unbalancing triple (x, y, L) consists of commuting involutions x, y ∈ G and a 2-component L of CG (x)
+such that
+                               [L, y] = L = [L, D],      D = O(CG (y)) ∩ CG (x).
+These equalities imply that y normalizes L and x ̸= y.
+   For a finite group H, let C(H) denote the following hereditary core condition. For every subgroup U ≤ H,
+every pair of commuting involutions a, b ∈ U , and every 2-component Y of CU (b), either τ (Y ) ∼ = PSL2 (q)
+for an odd prime power q, or
+                                       (O(CU (a)) ∩ CU (b))′ , Y ≤ O(CU (b)).
+                                                               
+
+Here U = H is allowed.
+   Once its rank hypothesis is verified, the comparison theorem supplies the maximality needed for Foote’s
+recognition theorem. The alternatives requiring further attention are an action kernel of 2-rank one and
+four explicit exceptional pairs.
+Theorem 9.1 (Recognition from pointed maximality). Let G be nonabelian simple, unbalanced, and K-
+proper, and suppose C(G) holds. Let (x, L) be pointed-maximal, with L/O(L) ∼
+                                                                           = A7 or PSL2 (q) for an odd
+prime power q ≥ 5. Then one of the following holds:
+    (i) G is of odd Lie type;
+   (ii) m2 (CG (L)) = 1;
+30                                                 AXIOM MATH
+
+
+     (iii) (G, L/O(L)) has one of the types
+                                (A9 , A5 ),   (A10 , A6 ),   (A11 , A7 ),   (J2 , A5 ).
+Proof. Put T = L/O(L), and suppose G is not of odd Lie type. We use Aschbacher’s rank-one recognition
+result in the form recorded in [13, Theorem 1.2, p. 57]: if F ∗ (G) is quasisimple and J is a 2-component of
+CG (t) with m2 (J) = 1 and t ∈ J, then unbalancedness of G implies that F ∗ (G)/Z(G) is of odd Lie type.
+Here F ∗ (G) = G and Z(G) = 1. This formulation includes odd-core quotients isomorphic to 2A7 ; it does
+not require the quotient to be SL2 (q).
+   We first verify the rank hypothesis for the entire family FT in Theorem 2.2. By the covering-group facts
+[19, Section 6.1], recalled before Theorem 2.5 without any family-rank assumption, an occurrence of type
+T has quotient by its odd core either T , of 2-rank two, or its perfect double cover Te, of 2-rank one.
+   Suppose (z, A) is pointed-maximal of type T with m2 (A) = 1. We use the rank-one argument in
+[12, proof of Theorem 3.1, pp. 430–431], retaining the successive witnesses. Choose a ∈ Inv(A). Its image
+is central in A/O(A) ∼  = Te, so a ∈ CG (A). If a = z, then A is a rank-one 2-component of CG (a) containing
+a. The rank-one recognition result just stated therefore gives the excluded odd Lie conclusion.
+   If a ̸= z, balance and Theorem 3.1 give (z, A) −→F (a, K). Pointed maximality gives τ (K) ∼     = T . The
+fixed layer D = Aa has quotient Te, and a ∈ D because CA (a)/D has odd order. If K z = K, then D ≤ K
+forces K/O(K) ∼   = Te; hence m2 (K) = 1. Since K is a 2-component of CG (a) and a ∈ K, the same rank-one
+recognition result applies.
+   Suppose K z ̸= K, and put W = ⟨K, K z ⟩. Modulo O(W ), the factors are interchanged by z and the
+image of D is fixed. The perfect residual of this fixed group is T unless both factors are double covers with
+distinct centers. Since D/O(D) ∼   = Te, we obtain
+                                               W/O(W ) ∼ = Te × Te.
+Choose a z-invariant Sylow 2-subgroup Z of Z ∗ (W ) containing a, by taking a Sylow subgroup in Z ∗ (W )⋊⟨z⟩
+containing ⟨a, z⟩. Then Z is a fourgroup. If ⟨b⟩ = Z ∩ K, the diagonal description of the fixed group gives
+a = bbz . Thus, a ̸= b, [a, b] = 1, and b ∈ CG (K).
+  Take the next pointed step (a, K) −→F (b, J). Its source is the preceding target, so τ (J) ∼ = T . Both b ∈
+Kb and bz ∈ (K z )b , by the odd-order fixed-layer quotients. Balance places these subgroups in L2′ (CG (b)).
+Hence a = bbz normalizes J, and the correspondence gives Kb ≤ J. It follows that J/O(J) ∼     = Te and b ∈ J.
+Thus, J is a rank-one 2-component of CG (b) containing b, and the same recognition result again gives the
+excluded odd Lie conclusion.
+  Consequently every member of FT has rank two. Theorem 2.3 makes L mirror-maximal, and Theorem 3.1
+makes it Foote-maximal. Apply [12, Main Theorem, p. 426], whose core hypothesis is exactly C(G). The
+normal closure of L in L2′ (G) = G is G. Foote’s first two alternatives are impossible by simplicity and
+|L/O(L)| < |G|. His fourth gives (ii), since x ∈ CG (L); his third gives G ∈ {A9 , A10 , A11 , J2 }. In An for
+9 ≤ n ≤ 11, the only nonsolvable involution centralizers have their unique 2-component An−4 on the fixed
+points. For J2 , the component has type A5 [6, Table 1, p. 441]. These give (iii).                          □
+   Of the four exceptional groups, A11 is allowed by UGT; the other three are excluded by their trivial
+local odd cores.
+Lemma 9.2. If G ∼  = A9 , A10 , or J2 , then O(CG (t)) = 1 for every involution t ∈ G.
+Proof. For G = An , where n = 9 or 10, an involution t has k = 2 or 4 transpositions and f = n − 2k fixed
+points. The action on these orbits gives a homomorphism
+                                               CAn (t) −→ Sk × Sf
+with a 2-group kernel and surjective coordinate projections. Here k ∈ {2, 4} and f ∈ {1, 2, 5, 6}, so both
+symmetric groups have trivial odd core. Thus, O(CAn (t)) lies in the 2-group kernel and is trivial.
+  For J2 , each involution centralizer has a normal 2-subgroup with quotient A5 [6, Table 1, p. 441]. Its
+odd core therefore lies in that 2-subgroup and is trivial.                                              □
+                                                                                                                31
+
+
+   To obtain a pointed-maximal component from unbalancedness, we use Gilman–Solomon’s reductions.
+These involve an unbalanced-group assertion for groups that need not be simple.
+   For a finite group H, write U(H) for the following assertion. If t ∈ Inv(H) and O(CH (t)) ≰ O(H),
+then O(CH (t)) acts nontrivially on τ (J) for some 2-component J of H, where τ (J) is of odd Lie type, an
+alternating group of odd degree, PSL3 (4), or the Held sporadic group He. This is the general unbalanced-
+group assertion of [13, p. 55].
+   For proper sections, the known groups supply both this assertion and the restriction on odd-core commu-
+tators needed for C(G). We use the known-group calculations recorded by Gorenstein, Lyons, and Solomon
+[19, Theorem 7.7.1], together with the reductions of Gilman–Solomon and Foote cited in the proof.
+Lemma 9.3. Let H be a K-group. The following are true:
+   (i) U(H) holds.
+  (ii) If a ∈ Inv(H) and Y is a 2-component of H with τ (Y ) ≁ PSL2 (q) for every odd prime power q,
+                                                              =
+       then
+                                     [O(CH (a))′ , Y ] ≤ O(H).
+Proof. Let S be a nonabelian simple K-group, S ≤ X ≤ Aut(S), and a ∈ Inv(X). The known-group
+calculation [19, Theorem 7.7.1, pp. 385–388] shows that O(CX (a)) ̸= 1 forces S to be of odd Lie type, of
+odd alternating degree, PSL3 (4), or He. We also use
+(27)                       S≁ PSL2 (q) (q odd) =⇒ O(CX (a)) is abelian.
+                             =
+The alternating, sporadic, and characteristic-two cases are given by parts (a)–(c) of that theorem. For odd
+Lie type, let I ≤ Aut(S) be the inner-diagonal automorphism group of [19, Definition 2.5.10], and use the
+Lie components defined in [19, Definition 4.9.3]. If O(CX (a)) = 1, there is nothing to prove. Otherwise,
+[19, Theorem 7.7.1(d)(1)] gives a ∈ I. Part (d)(2) says that O(CX (a)) centralizes these components.
+The automorphism description in [19, Theorem 2.5.12] and the centralizer list in Table 4.5.1 then give
+O(CX (a)) ≤ I, unless S ∼   = PSL2 (q). In that automorphism description, an odd-order automorphism with
+nontrivial field action acts nontrivially on a listed component [19, Proposition 4.2.3(b)]. The remaining
+order-three automorphisms in type D4 either move the involution class or permute its components. Since
+I/S is abelian, CX∩I (a) is normal in CI (a). Its odd core is therefore normal in CI (a) and contains
+O(CX (a)). Thus, O(CX (a)) ≤ O(CI (a)), which is cyclic by part (d)(3). This proves (27) for every
+intermediate X, as required.
+   If (i) fails, choose a K-group H of least order for which it fails. Its proper sections satisfy U. Lemma 3.1 of
+[13] gives F ∗ (H) = S simple. Thus, S ∈ K and S ≤ H ≤ Aut(S). The preceding known-group calculation
+gives U(H), since a nontrivial subgroup of H cannot centralize S, a contradiction.
+   For (ii), put R = O(CH (a)) and pass to H/O(H). The image of Y is quasisimple. If a does not
+normalize Y , or acts trivially on Y /O(Y ), then R acts trivially there [12, Lemma 2.1(iii)]. Otherwise
+[18, Proposition 5.32(iii), pp. 33–34], applied with P = ⟨a⟩, gives a quotient X of ⟨Y, R, a⟩ with
+                                      F ∗ (X) ∼= τ (Y ),    R̄ ≤ O(CX (ā)).
+The kernel of this quotient centralizes Y /O(Y ), and ā is an involution. Equation (27) makes R̄ abelian.
+Hence R′ centralizes Y /O(Y ), which proves (ii).                                                       □
+  The remaining reductions connect unbalancedness to recognition: one produces a pointed-maximal
+unbalancing triple, and the other handles an action kernel of 2-rank one without requiring such a triple.
+Proposition 9.4 (Reductions to recognition). Let G be a nonabelian simple K-proper group that is unbal-
+anced and does not satisfy the conclusion of Theorem 1.2. Then the following statements hold.
+  (R1) If G has least order among such groups, then C(G) holds and there is an unbalancing triple (x, y, L)
+       such that L/O(L) ∼ = A7 or PSL2 (q) with q ≥ 5 odd, and (x, L) is pointed-maximal.
+  (R2) If x ∈ Inv(G) and L is a 2-component of CG (x) with L/O(L) ∼  = A7 or PSL2 (q) for odd q ≥ 5, and
+       m2 (CG (L)) = 1, then G is of odd Lie type.
+32                                                AXIOM MATH
+
+
+Proof. Every proper section of G is a K-group, so satisfies U by Theorem 9.3(i). The standard-component
+hypothesis S in [13, p. 58] also holds in every proper section: whenever such a section has a simple gener-
+alized Fitting subgroup, that subgroup already belongs to K. This verifies both proper-section hypotheses
+of their Theorem 1.7.
+   We prove R2 first. The rank-one condition makes (x, L) Foote-maximal, as observed above. Apply
+[13, Theorem 1.7], the combined recognition theorem of Foote and Harris. Since G is simple, x acts on
+F ∗ (G) = G by an inner automorphism. Its listed possibilities therefore give either odd Lie type or
+                                    G ∈ {A9 , A10 , A11 , J1 , J2 , M12 , HS}.
+Here J1 and HS are the first Janko and Higman–Sims sporadic simple groups, respectively. The sporadic
+groups in this list have trivial odd cores in all involution centralizers [19, Theorem 7.7.1(b)]; A9 and A10
+are excluded by Theorem 9.2. If G = A11 , the listed component is A7 on the fixed points of a double
+transposition. The fourgroup on the other four points centralizes it, contrary to m2 (CG (L)) = 1. This
+proves R2.
+   For R1, first let U ≤ G and let a, b be commuting involutions of U . Set
+                                  M = CU (b),        D = O(CU (a)) ∩ CU (b).
+Then D ⊴ CM (a) has odd order, so D ≤ O(CM (a)). Since M ≤ CG (b) < G, part (ii) of Theorem 9.3
+applied to M gives exactly C(G).
+   Next, U(G) cannot hold. Otherwise G would itself be one of the groups listed in the definition of U,
+and the known-group calculation [19, Theorem 7.7.1], with an inner involution, would give the conclusion
+of UGT. In the alternating case G = An , the involution must fix three points and have an even number
+of transpositions, so n ≡ 3 (mod 4). Lemma 1.1 of [13] therefore supplies an unbalancing triple. Together
+with the proper-section assertion already proved, this makes G a minimal unbalanced group in the sense
+of that paper.
+   We now apply its type reduction and maximal-triple argument [13, Theorems 1.2–1.6, Lemma 3.9, and
+§4]. We spell out the type selection. The first four recognition results, as used in the first paragraph of §4,
+reduce the quotients of unbalancing components to
+                    PSL2 (q) (q odd),      A7 ,      covering groups of PSL3 (4),     He.
+Here the list describes J/O(J) for every unbalancing component J, not merely its simple top. In the
+PSL2 (q) and A7 alternatives, the quotient is the simple group itself and contains a fourgroup; their double
+covers are not included in these alternatives. The Held group also contains a fourgroup, as is visible in its
+involution centralizers [6, Table 1]. For a covering group Q of PSL3 (4), suppose instead that m2 (Q) = 1. A
+Sylow 2-subgroup P of Q would then be cyclic or generalized quaternion. Every quotient of such a group
+has 2-rank at most two. But P maps onto a Sylow 2-subgroup of PSL3 (4), which contains the elementary
+abelian subgroup of order 16 represented by
+                                                               
+                                           1 u v                 
+                                            0 1 0 : u, v ∈ F4 .
+                                              0 0 1
+                                                                 
+
+These matrices intersect the scalar subgroup trivially, so their images still have order 16, a contradiction.
+Thus, every quotient in the list has 2-rank at least two. Since quotienting by the odd normal subgroup
+O(J) preserves 2-rank, every unbalancing component J satisfies m2 (J) ≥ 2, as required by [13, Lemma 3.9].
+The proper-subgroup B-property required by Lemma 3.9 is Theorem 2.7. In its maximization argument,
+use Theorem 3.3 for the increase of quotient order or centralizer rank. This supplies the containment form
+of Lemma 3.4 needed there.
+   If an unbalancing component of one of the last two types occurs, Theorem 1.6 supplies an unbalancing
+component with simple top PSL2 (q), q ≥ 27: its other conclusion would give G ∼     = PSL3 (4) or He, both
+of which have O(CG (t)) = 1 for every t ∈ Inv(G). Apply Lemma 3.9 starting with this component. In
+its sequence of unbalancing triples the type remains PSL2 (r) with r ≥ 27. Indeed a correspondence into
+                                                                                                               33
+
+
+A7 , a covering group of PSL3 (4), or He cannot have such a source: their involution centralizers have
+no component with this simple top. The centralizer lists are [19, §4.9 and Table 5.3]; for He see also
+[6, Table 1]. At a step between groups of PSL2 type the quotient order cannot decrease. If neither of
+the last two types occurs, start instead with any unbalancing triple and apply Lemma 3.9 directly. Thus,
+in either case we obtain an unbalancing triple (x, y, L) of PSL2 or A7 type satisfying the maximality
+hypothesis of [13, Theorem B].
+   It remains to verify hypothesis (c) of [13, Theorem B]: the relevant standard-component problems in
+core-free proper sections must have solutions of restricted type, as defined there on p. 59. Let H be such
+a section, so O(H) = 1, and let J be a component of CH (a) of one of the specified types, standard in H
+in the sense of [13, p. 56]. Put E = E(H) and X = ⟨J H ⟩. By Theorem 2.7 and L-balance, J ≤ E. The
+components of CE (a) lie in single components of E or diagonally across pairs interchanged by a. Thus
+Y = ⟨J E ⟩ is a component or a central product of two components of E.
+   Standardness implies that J ⊴ CH (b) for every b ∈ Inv(CH (J)): if h ∈ CH (b), then b centralizes both
+J and J h , so J = J h . If J ⊴ E, then J is a component of H; distinct conjugate components commute,
+so standardness gives X = J. Otherwise E = Y : an involution in any component outside Y would force
+J ⊴ Y , hence J ⊴ E. For the same reason Z(E) and O2 (H) contain no involutions. Since O(H) = 1, this
+gives Z(E) = 1, O2 (H) = 1, and F ∗ (H) = E = X. Consequently X is simple or is a direct product of two
+simple groups interchanged by a. In the latter case J is diagonal and each factor has the simple type of J.
+It therefore suffices to consider X simple, with X ≤ H ≤ Aut(X).
+   Suppose first that J/O(J) ∼    = PSL2 (q), q odd, or A7 . Here J is GS-maximal in H. Indeed, in a
+correspondence from (a, J) witnessed by b, the condition [J, b] ≤ O(J) ≤ Z(J) and perfectness give
+[J, b] = 1. Thus, J ⊴ CH (b). If K is the corresponding component, J ≤ ⟨K, K a ⟩ forces J = K or J = K a ;
+as a centralizes J, either gives J = K. The proper sections of H satisfy U and Hypothesis S, as noted
+above. Hence [13, Theorem 1.7] places X in the restricted list.
+   For J/Z(J) ∼ = PSL3 (4), use the involution-centralizer lists for the known simple group X. Alternating
+groups and groups of odd Lie type have no such component; see [19, Table 4.5.1 and §4.9] for the latter.
+In characteristic two, if a ∈ X, then F ∗ (CX (a)) = O2 (CX (a)) by [7, (2.4)], so E(CX (a)) = 1, contrary to
+the existence of J. Thus, a ∈ / X, and the outer-involution list leaves only X ∼  = PSL3 (16), with a inducing
+a field involution [7, §19], with the correction to (19.1) in [8, p. 136]. For sporadic X, the possibilities are
+Suz, He, and O′ N [19, Table 5.3]; see also [6, Table 1]. These groups, and the simple types in the cases
+X = J and X a product of two factors, are all restricted in the sense of [13, p. 59, Theorems 1.7–1.8]. This
+proves hypothesis (c).
+   Apply Theorem B. Its first alternative is U(G), already excluded. Its second supplies a local component
+K with
+                                 K/O(K) ∼ = PSL2 (r2 ),      ⟨b⟩ ∈ Syl2 (CG (K)).
+Reduction R2 excludes this alternative without any unbalancing-triple assumption on K. The remaining al-
+ternative is Theorem B(3): the correspondences from (x, L) are isomorphic and satisfy its Sylow-normalizer
+condition. Lemma 3.5 of that paper, or the argument of Theorem 3.4, makes L GS-maximal. By Theo-
+rem 3.1, (x, L) is pointed-maximal.                                                                           □
+   Applying these reductions to a least counterexample leaves exactly the alternatives already settled by
+recognition and the odd-core calculations.
+Proof of Theorem 1.2. Choose a counterexample G of least order. Reduction R1 gives C(G) and a pointed-
+maximal unbalancing triple (x, y, L) of one of the required types. The group G is unbalanced by the hypoth-
+esis of UGT, so Theorem 9.1 applies: either G is of odd Lie type, m2 (CG (L)) = 1, or G ∈ {A9 , A10 , A11 , J2 }.
+Apply reduction R2 in the rank-one case. Every remaining group is allowed by UGT or excluded by The-
+orem 9.2, a contradiction.                                                                                     □
+Remark 9.5 (A shorter deduction and the formalized route). The reductions above also permit a shorter
+deduction of UGT. The proof of reduction R1 obtains GS-maximality of L, which implies Foote-maximality
+34                                                    AXIOM MATH
+
+
+directly by Theorem 3.1 and the definition of maximality in [12, p. 426]. Since L/O(L) is PSL2 (q) or A7 ,
+it has 2-rank two. Foote’s Main Theorem therefore applies directly, with the hereditary core condition
+supplied by the same reduction. The remaining alternatives are handled by reduction R2 and the odd-core
+calculations above. This deduction does not require Theorem 2.3. We retain the longer argument because
+AxiomProver formalized this route through Solomon’s maximal-2-component theory. The presentation
+thus follows the formalized argument and also establishes the stronger mirror-maximality conclusion of
+Theorem 2.3.
+
+                                                Acknowledgements
+We thank Richard Lyons, Dan Nakano, and Ronald Solomon for their insights. Lyons’s perspective on
+the proof routes and their history has been especially valuable in placing this work in context. Solomon’s
+contributions to the classification, and in particular his theory of maximal 2-components, are fundamental
+to the argument presented here.
+
+                                                      References
+ [1] M. Aschbacher, On finite groups of component type, Illinois J. Math. 19 (1975), no. 1, 87–115. 10.1215/ijm/1256050927.
+ [2] M. Aschbacher, A characterization of Chevalley groups over fields of odd order. I, II, Ann. of Math. (2) 106 (1977),
+     no. 2, 353–398, and no. 3, 399–468; correction, 111 (1980), no. 2, 411–414. 10.2307/1971100; 10.2307/1971063; 10.
+     2307/1971101.
+ [3] M. Aschbacher, The status of the classification of the finite simple groups, Notices Amer. Math. Soc. 51 (2004), no. 7,
+     736–740. https://www.ams.org/journals/notices/200407/fea-aschbacher.pdf.
+ [4] M. Aschbacher, 2-Fusion systems of component type, lecture notes, Copenhagen, 2013. https://www.math.ku.dk/
+     english/research/conferences/2013/groups2013/AschbacherNotes.pdf.
+ [5] M. Aschbacher, R. Lyons, S. D. Smith, and R. Solomon, The Classification of Finite Simple Groups: Groups of Char-
+     acteristic 2 Type, Mathematical Surveys and Monographs, vol. 172, American Mathematical Society, Providence, RI,
+     2011.
+ [6] M. Aschbacher and G. M. Seitz, On groups with a standard component of known type, Osaka J. Math. 13 (1976), no. 3,
+     439–482. 10.18910/12268.
+ [7] M. Aschbacher and G. M. Seitz, Involutions in Chevalley groups over fields of even order, Nagoya Math. J. 63 (1976),
+     1–91. 10.1017/S0027763000017438.
+ [8] M. Aschbacher and G. Seitz, Corrections to “Involutions in Chevalley groups over fields of even order”, Nagoya Math. J.
+     72 (1978), 135–136. 10.1017/S0027763000018250.
+ [9] N. Burgoyne, Finite groups with Chevalley-type components, Pacific J. Math. 72 (1977), no. 2, 341–350. https://msp.
+     org/pjm/1977/72-2/pjm-v72-n2-p06-s.pdf.
+[10] Cheng Kai-Nah and D. Held, Finite groups with a standard-component of type L3 (4), II, Rend. Sem. Mat. Univ. Padova
+     73 (1985), 147–167. https://www.numdam.org/item/RSMUP_1985__73__147_0.pdf.
+[11] W. Feit and J. G. Thompson, Solvability of groups of odd order, Pacific J. Math. 13 (1963), no. 3, 775–1029.
+[12] R. Foote, Finite groups with maximal 2-components of type L2 (q), q odd, Proc. London Math. Soc. (3) 37 (1978), no. 3,
+     422–458. 10.1112/plms/s3-37.3.422.
+[13] R. Gilman and R. Solomon, Finite groups with small unbalancing 2-components, Pacific J. Math. 83 (1979), no. 1, 55–106.
+     https://msp.org/pjm/1979/83-1/pjm-v83-n1-p05-s.pdf.
+[14] D. M. Goldschmidt, 2-signalizer functors on finite groups, J. Algebra 21 (1972), no. 2, 321–340. 10.1016/0021-8693(72)
+     90027-0.
+[15] D. Gorenstein, Finite Groups, Harper & Row, New York, 1968.
+[16] D. Gorenstein, The Classification of Finite Simple Groups, Vol. 1: Groups of Noncharacteristic 2 Type, Plenum Press,
+     New York, 1983.
+[17] D. Gorenstein, R. Lyons, and R. Solomon, The Classification of the Finite Simple Groups, Number 1: Part I, Chapters 1–
+     2, Mathematical Surveys and Monographs, vol. 40.1, American Mathematical Society, Providence, RI, 1994. https:
+     //doi.org/10.1090/surv/040.1.
+[18] D. Gorenstein, R. Lyons, and R. Solomon, The Classification of the Finite Simple Groups, Number 2: Part I, Chapter G,
+     General Group Theory, Mathematical Surveys and Monographs, vol. 40.2, American Mathematical Society, Providence,
+     RI, 1996. 10.1090/surv/040.2.
+[19] D. Gorenstein, R. Lyons, and R. Solomon, The Classification of the Finite Simple Groups, Number 3: Part I, Chapter A,
+     Almost Simple K-Groups, Mathematical Surveys and Monographs, vol. 40.3, American Mathematical Society, Providence,
+     RI, 1998. 10.1090/surv/040.3.
+                                                                                                                              35
+
+
+[20] D. Gorenstein, R. Lyons, and R. Solomon, The Classification of the Finite Simple Groups, Number 8: Part III, Chapters
+     12–17, The Generic Case, Completed, Mathematical Surveys and Monographs, vol. 40.8, American Mathematical Society,
+     Providence, RI, 2018. 10.1090/surv/040.8.
+[21] I. Capdeboscq, D. Gorenstein, R. Lyons, and R. Solomon, Errata for The Classification of the Finite Simple Groups,
+     updated 3 March 2022. https://sites.math.rutgers.edu/~lyons/cfsg/er220303.pdf.
+[22] R. L. Griess, Jr., and R. Solomon, Finite groups with unbalancing 2-components of {Lb 3 (4), He}-type, J. Algebra 60 (1979),
+     no. 1, 96–125.
+[23] M. E. Harris, PSL(2, q) type 2-components and the unbalanced group conjecture, J. Algebra 68 (1981), no. 1, 190–235.
+[24] R. Kessar and M. Linckelmann, A block theoretic proof of Thompson’s A × B-lemma, Arch. Math. 117 (2021), no. 5,
+     481–483. 10.1007/s00013-021-01638-5.
+[25] R. Solomon, A brief history of the classification of the finite simple groups, Bull. Amer. Math. Soc. (N.S.) 38 (2001),
+     no. 3, 315–352. 10.1090/S0273-0979-01-00909-0.
+[26] R. Solomon, Maximal 2-components in finite groups, Comm. Algebra 4 (1976), no. 6, 561–594. 10.1080/
+     00927877608822121.
+[27] J. H. Walter, The B-conjecture; characterization of Chevalley groups, Mem. Amer. Math. Soc. 61 (1986), no. 345, iv+196
+     pp. 10.1090/memo/0345.
+
